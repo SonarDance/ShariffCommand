@@ -1,0 +1,8 @@
+[package]
+org = "tharana_wanigaratne"
+name = "shariff_tester"
+version = "0.1.0"
+distribution = "2201.7.2"
+
+[build-options]
+observabilityIncluded = true

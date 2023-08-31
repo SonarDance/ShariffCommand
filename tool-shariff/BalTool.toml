@@ -1,0 +1,5 @@
+[tool]
+id = "shariff" # need to be same name as picocli name in java file
+
+[[dependency]]
+path = "./ShariffCommand-1.0-SNAPSHOT.jar" # tool jar file location

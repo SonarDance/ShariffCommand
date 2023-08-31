@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'shariff.cli'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven{
+        url = 'https://maven.pkg.github.com/ballerina-platform/*'
+        credentials {
+            username System.getenv("packageUser")
+            password System.getenv("packagePAT")
+        }
+    }
+}
+
+dependencies {
+    implementation 'org.ballerinalang:ballerina-cli:2201.5.2-20230825-182600-2be0f24b'
+    implementation 'info.picocli:picocli:4.7.5'
+}
