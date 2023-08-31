@@ -48,11 +48,19 @@ cd tool-shariff
 
 8. Include the tool details in them as follows
 
-```toml
+```bal-tools.toml
 [[tool]]
 id = "shariff"
 org = "tharana_wanigaratne"
 name = "tool_shariff"
+```
+
+```dist-2201.7.2.toml
+[[tool]]
+id = "shariff"
+org = "tharana_wanigaratne"
+name = "tool_shariff"
+version = "0.1.0"
 ```
 
 9. Check if the tool is added using the cmd
