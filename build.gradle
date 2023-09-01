@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    // For running the main class of the ballerina tool tester package
+    id 'application'
 }
 
 group 'shariff.cli'
@@ -18,6 +20,14 @@ repositories {
 }
 
 dependencies {
+    // Required dependencies for building a ballerina cli application
     implementation 'org.ballerinalang:ballerina-cli:2201.5.2-20230825-182600-2be0f24b'
     implementation 'info.picocli:picocli:4.7.5'
+
+    // Additional dependencies for testing
+}
+
+// class to build when gradlew run is executed in there terminal
+application {
+    mainClass = 'balToolTester.Main'
 }
