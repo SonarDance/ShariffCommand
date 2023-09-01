@@ -2,6 +2,8 @@ plugins {
     id 'java'
     // For running the main class of the ballerina tool tester package
     id 'application'
+    // For using the ballerina java project API
+//    id 'java-library'
 }
 
 group 'shariff.cli'
@@ -21,8 +23,13 @@ repositories {
 
 dependencies {
     // Required dependencies for building a ballerina cli application
-    implementation 'org.ballerinalang:ballerina-cli:2201.5.2-20230825-182600-2be0f24b'
-    implementation 'info.picocli:picocli:4.7.5'
+    implementation group:'org.ballerinalang', name:'ballerina-cli', version:'2201.5.2-20230825-182600-2be0f24b'
+    implementation group:'info.picocli', name:'picocli', version:'4.7.5'
+
+    // Required dependencies for accessing the ballerina java project API
+//    implementation group:'org.ballerinalang', name:'ballerina-lang', version:'2201.5.2'
+//    implementation group:'org.ballerinalang', name:'ballerina-tools-api', version:'2201.5.2'
+//    implementation group:'org.ballerinalang', name:'ballerina-parser', version:'2201.5.2'
 
     // Additional dependencies for testing
 }
