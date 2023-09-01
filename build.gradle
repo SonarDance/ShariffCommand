@@ -32,6 +32,7 @@ dependencies {
 //    implementation group:'org.ballerinalang', name:'ballerina-parser', version:'2201.5.2'
 
     // Additional dependencies for testing
+    implementation group:'com.fasterxml.jackson.core', name:'jackson-databind', version:'2.13.3'
 }
 
 // class to build when gradlew run is executed in there terminal

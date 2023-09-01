@@ -1,12 +1,11 @@
 package shariff.cli;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import io.ballerina.cli.BLauncherCmd;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.InputStreamReader;
-import java.io.PrintStream;
+import java.io.*;
 import java.util.List;
+
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -159,7 +158,18 @@ public class ShariffCommand implements BLauncherCmd {
         // ==================================================================
         // Using the syntax tree by a scanner to perform static code analysis
         // ==================================================================
-        // to be continued...
+        // pass the syntax tree json and convert it to nodes
+        SyntaxTreeScanner stScanner = new SyntaxTreeScanner(new File("./syntax-tree.json"));
+
+        try {
+            this.printStream.println("Starting the static code analysis for the generated syntax tree...");
+            JsonNode stNode = stScanner.scanTree();
+
+            // display the syntax tree is prettier format in the console
+            this.printStream.println(stNode.toPrettyString());
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
