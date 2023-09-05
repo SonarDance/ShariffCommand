@@ -1,5 +1,26 @@
 # ShariffCommand
 
+## About
+
+- ShariffCommand is a ballerina tool
+- This tool adds "bal shariff" command support for ballerina
+- The goal of the tool is to be able to provide static code scanning functionality for ballerina lang
+
+## How it works
+
+1. Once "bal shariff" is executed, it determines if the source file is in a ballerina project
+2. If it's a ballerina project, then this will build the project
+3. Next the built jar file is extracted to retrieve the syntax tree of the source file
+4. The syntax tree is traversed to produce the generic issues report for SonarCloud/SonarQube analysis
+5. More features to be onboarded...
+
+## Features
+
+- Create Generic Issue reports for SonarCloud & SonarQube analysis
+- More features to be onboarded...
+
+## Usage
+
 1. Run and build jar file
 
 ```cmd
@@ -35,8 +56,12 @@ bal push --repository=local
 
 6. Move the tool_shariff to the central.ballerina.io, bala folder
 
-```cmd
-cd tool-shariff
+```
+📦central.ballerina.io
+ ┗ 📦bala
+    ┗📦tharana_wanigaratne
+      ┗**📦tool_shariff**
+📦local
 ```
 
 7. modify the .config folders following files

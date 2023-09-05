@@ -1,6 +1,7 @@
 package shariff.cli;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.ballerina.cli.BLauncherCmd;
 
 import java.io.*;
@@ -155,21 +156,57 @@ public class ShariffCommand implements BLauncherCmd {
                 this.printStream.println(e);
         }
 
-        // ==================================================================
-        // Using the syntax tree by a scanner to perform static code analysis
-        // ==================================================================
-        // pass the syntax tree json and convert it to nodes
-        SyntaxTreeScanner stScanner = new SyntaxTreeScanner(new File("./syntax-tree.json"));
+        // =============================================================
+        // Generating a generic issues JSON file through the syntax tree
+        // =============================================================
+        // retrieve the syntax tree file, the project executes from the ShariffCommand directory itself
+        File syntaxTreeFile = new File("./syntax-tree.json");
 
+        // pass the file to the syntax tree scanner
+        SyntaxTreeScanner syntaxTree = new SyntaxTreeScanner(syntaxTreeFile);
+
+        // use the syntax tree scanner to convert the JSON file to Java Objects using Jackson
+        JsonNode stNode = null;
         try {
-            this.printStream.println("Starting the static code analysis for the generated syntax tree...");
-            JsonNode stNode = stScanner.scanTree();
-
-            // display the syntax tree is prettier format in the console
-            this.printStream.println(stNode.toPrettyString());
+            this.printStream.println("Onboarding syntax-tree.json to memory...");
+            stNode = syntaxTree.scanTree();
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            this.printStream.println("Error!, unable to move the syntax-tree.json file");
+            this.printStream.println(e);
         }
+
+        // get the diagnostics of the syntax tree as a Json java object
+        // receive the project name through the jar file
+        String projectName = jarFile.split("\\.(?=[^\\.]+$)")[0]; // [jarfile_name, .jar]
+        JsonNode sonarGenericIssuesNode = syntaxTree.generateSonarGenericIssueData(stNode, projectName, userFile);
+
+        // save the generic issue data as a json file
+        try {
+            this.printStream.println("Generating Sonar Generic Issue report...");
+            // Convert JsonNode to JSON string
+            ObjectMapper objectMapper = new ObjectMapper();
+            String jsonAsString = objectMapper.writeValueAsString(sonarGenericIssuesNode);
+
+            // Specify the file path where you want to save the JSON file
+            String filePath = "./ballerina-sonar-generic-report.json";
+
+            // Write the JSON string to a file
+            File jsonFile = new File(filePath);
+            objectMapper.writeValue(jsonFile, sonarGenericIssuesNode);
+
+            this.printStream.println("Ballerina Sonar Generic Report created successfully!");
+        } catch (IOException e) {
+            this.printStream.println("Error!, unable to Create a generic report!");
+            this.printStream.println(e);
+        }
+
+        // Print the generated report data in the console
+        this.printStream.println(sonarGenericIssuesNode.toPrettyString());
+
+        // ================================================
+        // Performing Static Code Analysis Through Scanners
+        // ================================================
+        // To be continued...
     }
 
     @Override
