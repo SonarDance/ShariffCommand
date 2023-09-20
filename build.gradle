@@ -3,7 +3,7 @@ plugins {
     // For running the main class of the ballerina tool tester package
     id 'application'
     // For using the ballerina java project API
-//    id 'java-library'
+    id 'java-library'
     // For SonarCloud static code analysis integration
     id "org.sonarqube" version "4.3.1.3277"
 }
@@ -39,7 +39,8 @@ dependencies {
     implementation group:'org.ballerinalang', name:'ballerina-tools-api', version:'2201.5.2'
     implementation group:'org.ballerinalang', name:'ballerina-parser', version:'2201.5.2'
 
-    // Other dependencies
+    // Required Module to convert the AST to a JSON File
+    implementation group:'org.ballerinalang', name:'diagram-util', version:'2201.5.2'
 }
 
 // class to build when gradlew run is executed in there terminal

@@ -2,10 +2,14 @@ package balToolTester;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.ballerina.compiler.internal.parser.BallerinaParser;
+import io.ballerina.compiler.internal.parser.ParserFactory;
+import io.ballerina.compiler.internal.parser.tree.STNode;
 import shariff.cli.SyntaxTreeScanner;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 
 public class Main {
     public static void main(String[] args)  throws IOException {
@@ -16,6 +20,25 @@ public class Main {
         // Tool Testing Methods
         // ====================
 //        testJacksonSyntaxTree();
+        showTokens();
+    }
+
+    public static void showTokens() throws IOException{
+
+        // get the relevant file
+        File sourceCodeFile = new File("./shariff-tester/main.bal");
+
+        // get the file code in string format
+        String sourceCodeString = new String(Files.readAllBytes(sourceCodeFile.toPath()));
+
+        // Create a Syntax Tree of the source file
+        BallerinaParser parseFile = ParserFactory.getParser(sourceCodeString);
+        STNode sourceFileSyntaxtTree = parseFile.parse();
+
+        // Print all tokens individually
+        for(STNode tokenNode : sourceFileSyntaxtTree.tokens()){
+            System.out.println("TOKEN: " + tokenNode);
+        }
     }
 
     // Method to test modifying a syntax tree according to the form we require
