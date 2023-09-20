@@ -9,7 +9,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/main" />
+            <option value="$PROJECT_DIR$/shariff-tester" />
+            <option value="$PROJECT_DIR$/src" />
           </set>
         </option>
       </GradleProjectSettings>

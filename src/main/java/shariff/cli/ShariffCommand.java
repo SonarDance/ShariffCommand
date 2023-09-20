@@ -14,15 +14,21 @@ import picocli.CommandLine.Parameters;
 
 @Command(
         name = "shariff",
-        description = "Generate SARIF report for a given ballerina file"
+        description = "Generate Syntax Tree based reports for a given ballerina source file"
 )
 public class ShariffCommand implements BLauncherCmd {
+    // CMD Launcher Attributes
     private final PrintStream printStream;
     @Option(
             names = {"--help", "-h", "?"},
             usageHelp = true
     )
     private boolean helpFlag;
+
+    @Option(
+            names = {"--generate-generic-report"}
+    )
+    private boolean genericsIssueDataFlag;
 
     @Parameters(
             description = "Ballerina file"
@@ -37,28 +43,15 @@ public class ShariffCommand implements BLauncherCmd {
         this.printStream = printStream;
     }
 
-    @Override
-    public void execute(){
-        // if bal sheriff --help is passed
-        if (this.helpFlag) {
-            StringBuilder builder = new StringBuilder();
-            builder.append("Sample tool for bal tool testing\n\n");
-            builder.append("bal shariff \n\n");
-            builder.append("  <balFileName.bal>\n");
-            builder.append("    generates SARIF report for a ballerina project\n\n");
-            this.printStream.println(builder);
-            return;
-        }
-
-        printStream.println("shariff command 1.0.0 is executing\n");
-
+    // FEATURE Methods
+    public String checkFile(){
         // ================
         // Initial Checkups
         // ================
         // if an invalid argument is passed to the bal shariff command
         if (this.argList == null || this.argList.size() != 1) {
             this.printStream.println("Invalid number of arguments recieved!\n try bal shariff --help for more information.");
-            return;
+            return "";
         }
 
         // retrieve the user passed argument
@@ -68,16 +61,21 @@ public class ShariffCommand implements BLauncherCmd {
         String[] userFileExtension = userFile.split("\\.(?=[^\\.]+$)"); // [userFile, bal]
         if((userFileExtension.length != 2) || !userFileExtension[1].equals("bal")){
             this.printStream.println("Invalid file format received!\n file format should be of type '.bal'");
-            return;
+            return "";
         }
 
         // check if such ballerina file exists in the working directory
         File tempFile = new File("./" + userFile);
         if(!tempFile.exists()){
             this.printStream.println("No such file exists!\n please check the file name and then re run the command");
-            return;
+            return "";
         }
 
+        // return name of user file if it exists
+        return userFile;
+    }
+
+    public void generateGenericIssuesReport(String userFile){
         // =====================
         // Building the jar file
         // =====================
@@ -115,9 +113,9 @@ public class ShariffCommand implements BLauncherCmd {
 
         // Extract the jarFile
         processBuilder.command(
-            "cmd", "/c", "cd", "./target/bin", "&&",
-            "jar", "xf", jarFile);
-        
+                "cmd", "/c", "cd", "./target/bin", "&&",
+                "jar", "xf", jarFile);
+
         // start the extraction process
         try{
             Process process = processBuilder.start();
@@ -130,18 +128,18 @@ public class ShariffCommand implements BLauncherCmd {
                 this.printStream.println(line);
             }
         }catch(Exception e){
-                this.printStream.println("Error!, unable to extract the jar file");
-                this.printStream.println(e);
-            }
+            this.printStream.println("Error!, unable to extract the jar file");
+            this.printStream.println(e);
+        }
 
         // ======================
         // Moving the Syntax Tree
         // ======================
         // move the syntax-tree.json file in the syntax-tree folder of the extracted jar folder to the working directory
         processBuilder.command(
-            "cmd", "/c", "cd", "./target/bin/syntax-tree", "&&",
-            "move", "./syntax-tree.json", "../../../");
-        
+                "cmd", "/c", "cd", "./target/bin/syntax-tree", "&&",
+                "move", "./syntax-tree.json", "../../../");
+
         // start the moving process
         try{
             Process process = processBuilder.start();
@@ -152,8 +150,8 @@ public class ShariffCommand implements BLauncherCmd {
                 this.printStream.println(line);
             }
         }catch(Exception e){
-                this.printStream.println("Error!, unable to move the syntax-tree.json file");
-                this.printStream.println(e);
+            this.printStream.println("Error!, unable to move the syntax-tree.json file");
+            this.printStream.println(e);
         }
 
         // =============================================================
@@ -202,13 +200,42 @@ public class ShariffCommand implements BLauncherCmd {
 
         // Print the generated report data in the console
         this.printStream.println(sonarGenericIssuesNode.toPrettyString());
-
-        // ================================================
-        // Performing Static Code Analysis Through Scanners
-        // ================================================
-        // To be continued...
     }
 
+    // MAIN method
+    @Override
+    public void execute(){
+        // if bal shariff --help is passed
+        if (this.helpFlag) {
+            StringBuilder builder = new StringBuilder();
+            builder.append("Tool for generating reports based off of the syntax tree of a ballerina source file\n\n");
+            builder.append("bal shariff <ballerina-file-name> <command>\n\n");
+            builder.append("--ballerina-file-name--\n");
+            builder.append("  i.e: balFileName.bal\n");
+            builder.append("--command--\n");
+            builder.append("  --generate-generic-report\n");
+            builder.append("  --generate-Slang-ast [BETA]\n");
+            builder.append("  --generate-sarif-report [NOT IMPLEMENTED]\n");
+            builder.append("i.e: bal shariff main.bal --generate-generic-report\n");
+            this.printStream.println(builder);
+            return;
+        }
+
+        printStream.println("shariff command 1.0.0 is executing\n");
+
+        // check for user provided file in directory
+        String userFile = checkFile();
+        if(userFile.equals("")){
+            return;
+        }
+
+        // if --generate-generic-issues is passed
+        if(this.genericsIssueDataFlag){
+            generateGenericIssuesReport(userFile);
+        }
+    }
+
+    // INFO Methods
     @Override
     public String getName() {
         return "shariff";
@@ -216,16 +243,20 @@ public class ShariffCommand implements BLauncherCmd {
 
     @Override
     public void printLongDesc(StringBuilder out) {
-        out.append("Tool for generating SARIF report for provided ballerina file\n\n");
-        out.append("bal shariff [args]\n\n");
-        out.append("--args--\n");
-        out.append("  <balFileName.bal>\n");
-        out.append("    generates a SARIF report\n\n");
+        out.append("Tool for generating reports based off of the syntax tree of a ballerina source file\n\n");
+        out.append("bal shariff <ballerina-file-name> <command>\n\n");
+        out.append("--ballerina-file-name--\n");
+        out.append("  i.e: balFileName.bal\n");
+        out.append("--command--\n");
+        out.append("  --generate-generic-report\n");
+        out.append("  --generate-Slang-ast [BETA]\n");
+        out.append("  --generate-sarif-report [NOT IMPLEMENTED]\n");
+        out.append("    generate reports based on ST of a ballerina file\n\n");
     }
 
     @Override
     public void printUsage(StringBuilder out) {
-        out.append("Tool for generating SARIF report for provided ballerina file");
+        out.append("Tool for generating reports based off of the syntax tree of a ballerina source file");
     }
 
     @Override

@@ -1,2 +1,4 @@
 rootProject.name = 'ShariffCommand'
-include 'main'
+// You will require to include the directories for sonarqube to perform the analysis
+include 'src'
+include 'shariff-tester'

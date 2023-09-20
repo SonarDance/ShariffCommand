@@ -1,4 +1,4 @@
-package shariffcommand;
+package balToolTester;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -11,10 +11,11 @@ public class Main {
     public static void main(String[] args)  throws IOException {
         System.out.println("Welcome to bal shariff tool tester!");
 
+
         // ====================
         // Tool Testing Methods
         // ====================
-        testJacksonSyntaxTree();
+//        testJacksonSyntaxTree();
     }
 
     // Method to test modifying a syntax tree according to the form we require

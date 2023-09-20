@@ -16,8 +16,9 @@
 
 ## Features
 
-- Create Generic Issue reports for SonarCloud & SonarQube analysis
-- More features to be onboarded...
+- Create Generic Issue reports for SonarCloud & SonarQube analysis - done
+- Create SonarQube SLang AST from Ballerina source files
+- Generate SARIF report
 
 ## Usage
 
@@ -97,5 +98,13 @@ bal tool list
 10. Try out the tool
 
 ```cmd
-bal shariff balFile.bal
+bal shariff balFile.bal <command>
+```
+
+- --command--:
+
+```
+  --generate-generic-report
+  --generate-Slang-ast
+  --generate-sarif-report
 ```
