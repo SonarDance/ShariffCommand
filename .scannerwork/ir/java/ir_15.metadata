@@ -1,0 +1,7 @@
+shariff.cli.SyntaxTreeScanner#scanTree()LJsonNode;
+null
+java.lang.String#instance-init#
+java.nio.file.Files#readAllBytes(Ljava/nio/file/Path;)[B
+java.lang.String#<init>([B)V
+==
+toPath java.io.File#toPath()Ljava/nio/file/Path;

@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.ballerina.compiler.internal.parser.BallerinaParser;
 import io.ballerina.compiler.internal.parser.ParserFactory;
 import io.ballerina.compiler.internal.parser.tree.STNode;
+import io.ballerina.compiler.syntax.tree.SyntaxKind;
 import shariff.cli.SyntaxTreeScanner;
 
 import java.io.File;
@@ -33,11 +34,18 @@ public class Main {
 
         // Create a Syntax Tree of the source file
         BallerinaParser parseFile = ParserFactory.getParser(sourceCodeString);
-        STNode sourceFileSyntaxtTree = parseFile.parse();
 
-        // Print all tokens individually
-        for(STNode tokenNode : sourceFileSyntaxtTree.tokens()){
-            System.out.println("TOKEN: " + tokenNode);
+        STNode sourceFileSyntaxTree = parseFile.parse();
+        for(STNode token : sourceFileSyntaxTree.tokens()){
+            System.out.println(token.toString());
+        }
+
+        // SLang test: get a specific token from a set of tokens which match the word record
+        System.out.println("TOKENS with 'record' keyword");
+        for(STNode token : sourceFileSyntaxTree.tokens()){
+            if(token.kind.equals(SyntaxKind.RECORD_KEYWORD)){
+                System.out.println(token);
+            }
         }
     }
 

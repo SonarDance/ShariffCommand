@@ -1,0 +1,2 @@
+shariff.cli.ShariffCommand#printUsage(Ljava/lang/StringBuilder;)V
+java.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;

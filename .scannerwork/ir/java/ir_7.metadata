@@ -1,0 +1,10 @@
+shariff.cli.ShariffCommand#checkFile()Ljava/lang/String;
+java.lang.String#split(Ljava/lang/String;)[Ljava/lang/String;
+java.io.File#<init>(Ljava/lang/String;)V
+java.lang.String#equals(Ljava/lang/Object;)Z
+java.io.File#instance-init#
+==
+println java.io.PrintStream#println(Ljava/lang/String;)V
+exists java.io.File#exists()Z
+get java.util.List#get(I)Ljava/lang/Object;
+size java.util.List#size()I

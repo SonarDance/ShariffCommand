@@ -1,0 +1,2 @@
+shariff.cli.ShariffCommand#printLongDesc(Ljava/lang/StringBuilder;)V
+java.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;

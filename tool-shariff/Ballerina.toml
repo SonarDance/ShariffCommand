@@ -1,5 +1,5 @@
 [package]
-org = "tharana_wanigaratne"
+org = "tharanascommands"
 name = "tool_shariff"
 version = "0.1.0"
 distribution = "2201.7.2"

@@ -1,0 +1,10 @@
+shariff.cli.ShariffCommand#execute()V
+java.lang.StringBuilder#instance-init#
+java.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+java.lang.String#equals(Ljava/lang/Object;)Z
+java.lang.StringBuilder#<init>()V
+==
+println java.io.PrintStream#println(Ljava/lang/Object;)V
+println java.io.PrintStream#println(Ljava/lang/String;)V
+checkFile shariff.cli.ShariffCommand#checkFile()Ljava/lang/String;
+generateGenericIssuesReport shariff.cli.ShariffCommand#generateGenericIssuesReport(Ljava/lang/String;)V

@@ -1,0 +1,7 @@
+organization=sonardance
+projectKey=sonardance_cli-shariff-project
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.47284
+dashboardUrl=https://sonarcloud.io/dashboard?id=sonardance_cli-shariff-project
+ceTaskId=AYsaIoEObqhnS8Z7x0BV
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AYsaIoEObqhnS8Z7x0BV
