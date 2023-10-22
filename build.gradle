@@ -35,12 +35,13 @@ dependencies {
     // Testing Dependencies (Related to Getting the Ballerina source file Syntax Tree)
     // ====================
     // Required dependencies for accessing the ballerina java project API
-    implementation group:'org.ballerinalang', name:'ballerina-lang', version:'2201.5.2'
-    implementation group:'org.ballerinalang', name:'ballerina-tools-api', version:'2201.5.2'
-    implementation group:'org.ballerinalang', name:'ballerina-parser', version:'2201.5.2'
+    // The version should match the version you have in the local machine
+    implementation group:'org.ballerinalang', name:'ballerina-lang', version:'2201.7.2'
+    implementation group:'org.ballerinalang', name:'ballerina-tools-api', version:'2201.7.2'
+    implementation group:'org.ballerinalang', name:'ballerina-parser', version:'2201.7.2'
 
     // Required Module to convert the AST to a JSON File
-    implementation group:'org.ballerinalang', name:'diagram-util', version:'2201.5.2'
+    implementation group:'org.ballerinalang', name:'diagram-util', version:'2201.7.2'
 }
 
 // class to build when gradlew run is executed in there terminal

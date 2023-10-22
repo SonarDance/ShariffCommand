@@ -6,22 +6,83 @@ import io.ballerina.compiler.internal.parser.BallerinaParser;
 import io.ballerina.compiler.internal.parser.ParserFactory;
 import io.ballerina.compiler.internal.parser.tree.STNode;
 import io.ballerina.compiler.syntax.tree.SyntaxKind;
+import io.ballerina.projects.DiagnosticResult;
+import io.ballerina.projects.Module;
+import io.ballerina.projects.ProjectKind;
 import shariff.cli.SyntaxTreeScanner;
+
+// Imports relevant to getting the Ballerina Semantic Model
+import io.ballerina.projects.PackageCompilation;
+import io.ballerina.compiler.api.SemanticModel;
+import io.ballerina.projects.DocumentId;
+import io.ballerina.projects.Project;
+import io.ballerina.projects.directory.ProjectLoader;
+import io.ballerina.compiler.syntax.tree.SyntaxTree;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class Main {
     public static void main(String[] args)  throws IOException {
-        System.out.println("Welcome to bal shariff tool tester!");
-
-
         // ====================
         // Tool Testing Methods
         // ====================
-//        testJacksonSyntaxTree();
-        showTokens();
+        // testJacksonSyntaxTree();
+        // showTokens();
+        semanticAPIOperations();
+    }
+
+    public static void semanticAPIOperations(){
+        // get the source file
+        File sourceFile = new File("./shariff-tester/main.bal");
+
+        // Receive absolute path of the ballerina source file
+        // Path filePath = Path.of(sourceFile.getAbsolutePath());
+        Path filePath = Path.of(sourceFile.getPath());
+
+        // Load the ballerina file
+        Project project = ProjectLoader.loadProject(filePath);
+        // ==========================================
+        // Additional operations that can be performed
+        // ===========================================
+        // Get Diagnostics
+        DiagnosticResult diagnosticResult = project.currentPackage().runCodeGenAndModifyPlugins();
+        // iterate and display diagnostics
+        System.out.println("Displaying file diagnostics:");
+        diagnosticResult.diagnostics().forEach(diagnostic -> {
+            System.out.println(diagnostic.message());
+            System.out.println(diagnostic.diagnosticInfo().toString());
+        });
+
+        // get the document ID by considering if the project structure is relevant to Ballerina
+        DocumentId documentId = project.documentId(filePath);
+        if (project.kind().equals(ProjectKind.BUILD_PROJECT)) {
+            documentId = project.documentId(filePath);
+        } else {
+            // If project structure is different go to the next document
+            Module currentModule = project.currentPackage().getDefaultModule();
+            Iterator<DocumentId> documentIterator = currentModule.documentIds().iterator();
+
+            // block is used to prevent crashing
+            try{
+            documentId = documentIterator.next();
+            }catch (NoSuchElementException exception){
+                System.out.println("Error: " + exception);
+            }
+        }
+
+        // Compile the Ballerina source code file
+        PackageCompilation compilation = project.currentPackage().getCompilation();
+
+        // Retrieve the semantic model of the compiled source code
+        SemanticModel semanticModel = compilation.getSemanticModel(documentId.moduleId());
+
+        // Display the semantic model
+        System.out.println(semanticModel.toString());
     }
 
     public static void showTokens() throws IOException{
