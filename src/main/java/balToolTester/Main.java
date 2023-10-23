@@ -2,6 +2,7 @@ package balToolTester;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.ballerina.compiler.api.impl.BallerinaSemanticModel;
 import io.ballerina.compiler.internal.parser.BallerinaParser;
 import io.ballerina.compiler.internal.parser.ParserFactory;
 import io.ballerina.compiler.internal.parser.tree.STNode;
@@ -11,6 +12,9 @@ import io.ballerina.projects.Module;
 import io.ballerina.projects.ProjectKind;
 import io.ballerina.projects.environment.EnvironmentBuilder;
 import io.ballerina.projects.internal.environment.BallerinaDistribution;
+import io.ballerina.tools.text.LineRange;
+import org.wso2.ballerinalang.compiler.tree.BLangFunction;
+import org.wso2.ballerinalang.compiler.tree.BLangPackage;
 import shariff.cli.SyntaxTreeScanner;
 
 // Imports relevant to getting the Ballerina Semantic Model
@@ -26,6 +30,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Iterator;
+import java.util.List;
 import java.util.NoSuchElementException;
 
 public class Main {
@@ -47,20 +52,7 @@ public class Main {
         Path filePath = Path.of(sourceFile.getPath());
 
         // Load the ballerina file
-        // NOTE: There is currently a problem in loading the Ballerina Home variable value required to perform Package
-        // API operations
         Project project = ProjectLoader.loadProject(filePath);
-        // ==========================================
-        // Additional operations that can be performed
-        // ===========================================
-        // Get Diagnostics
-        DiagnosticResult diagnosticResult = project.currentPackage().runCodeGenAndModifyPlugins();
-        // iterate and display diagnostics
-        System.out.println("Displaying file diagnostics:");
-        diagnosticResult.diagnostics().forEach(diagnostic -> {
-            System.out.println(diagnostic.message());
-            System.out.println(diagnostic.diagnosticInfo().toString());
-        });
 
         // get the document ID by considering if the project structure is relevant to Ballerina
         DocumentId documentId = project.documentId(filePath);
@@ -82,11 +74,46 @@ public class Main {
         // Compile the Ballerina source code file
         PackageCompilation compilation = project.currentPackage().getCompilation();
 
-        // Retrieve the semantic model of the compiled source code
-        SemanticModel semanticModel = compilation.getSemanticModel(documentId.moduleId());
+        // Retrieve the BLangPackage Node
+        BLangPackage bLangPackage = compilation.defaultModuleBLangPackage();
+        System.out.println("Rules start from here");
 
-        // Display the semantic model
-        System.out.println(semanticModel.toString());
+        // To retrieve the semantic model
+        // SemanticModel semanticModel = compilation.getSemanticModel(documentId.moduleId());
+
+        // ========================
+        // Creating One simple Rule
+        // ========================
+        // This rule should be able to determine all functions who's parameters are greater than 7
+        // and report them with the accurate location information
+
+        // Obtain all functions from the syntax tree
+        List<BLangFunction> functions = bLangPackage.getFunctions();
+
+        // Only run the rule if the functions are not empty
+        if(!functions.isEmpty()){
+            functions.forEach(bLangFunction -> {
+                // Only trigger the check if there are parameters and the count is greater than 7
+                if(!bLangFunction.getParameters().isEmpty() && bLangFunction.getParameters().size() > 7){
+                    System.out.println("Display: error number");
+                    System.out.println("Message: Too many parameters in method");
+                    System.out.println("Issue spotted in the range of:");
+
+                    // Get position information where the issue has occured
+                    LineRange issueLocation = bLangFunction.getPosition().lineRange();
+                    System.out.println("Start line: " + issueLocation.startLine().line());
+                    System.out.println("Start offset: " + issueLocation.startLine().offset());
+                    System.out.println("End line: " + issueLocation.endLine().line());
+                    System.out.println("End offset: " + issueLocation.endLine().offset());
+                    System.out.println();
+                }
+            });
+        }
+
+
+
+        // Retrieve the semantic model of the compiled source code
+        // SemanticModel semanticModel = compilation.getSemanticModel(documentId.moduleId());
     }
 
     public static void showTokens() throws IOException{

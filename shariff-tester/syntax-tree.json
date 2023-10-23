@@ -1,1 +1,3294 @@
-{"ballerinaVersion":"2201.7.2","packageOrg":"tharana_wanigaratne","packageName":"shariff_tester","packageVersion":"0.1.0","modules":{"shariff_tester":{"moduleName":"shariff_tester","documents":{"main.bal":{"documentName":"main.bal","syntaxTree":{"imports":[],"members":[{"kind":"TypeDefinition","typeKeyword":{"kind":"TypeKeyword","isToken":true,"value":"type","isMissing":false,"position":{"startLine":0,"startColumn":0,"endLine":0,"endColumn":4},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"typeName":{"kind":"IdentifierToken","isToken":true,"value":"Student","isMissing":false,"position":{"startLine":0,"startColumn":5,"endLine":0,"endColumn":12},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"typeDescriptor":{"kind":"RecordTypeDesc","recordKeyword":{"kind":"RecordKeyword","isToken":true,"value":"record","isMissing":false,"position":{"startLine":0,"startColumn":13,"endLine":0,"endColumn":19},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"bodyStartDelimiter":{"kind":"OpenBracePipeToken","isToken":true,"value":"{|","isMissing":false,"position":{"startLine":0,"startColumn":20,"endLine":0,"endColumn":22},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}]},"fields":[{"kind":"RecordField","typeName":{"kind":"StringTypeDesc","name":{"kind":"StringKeyword","isToken":true,"value":"string","isMissing":false,"position":{"startLine":1,"startColumn":4,"endLine":1,"endColumn":10},"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"source":"    string ","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":1,"startColumn":4,"endLine":1,"endColumn":10},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"string","signature":"string"},"symbol":{"kind":"TYPE","typeKind":"string","signature":"string"},"diagnostics":[]}},"fieldName":{"kind":"IdentifierToken","isToken":true,"value":"name","isMissing":false,"position":{"startLine":1,"startColumn":11,"endLine":1,"endColumn":15},"leadingMinutiae":[],"trailingMinutiae":[]},"semicolonToken":{"kind":"SemicolonToken","isToken":true,"value":";","isMissing":false,"position":{"startLine":1,"startColumn":15,"endLine":1,"endColumn":16},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}]},"source":"    string name;\n","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"position":{"startLine":1,"startColumn":4,"endLine":1,"endColumn":16},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"string","signature":"string"},"symbol":{"isOptional":false,"deprecated":false,"hasDefaultValue":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"RECORD_FIELD","signature":"string name"},"diagnostics":[]}},{"kind":"RecordField","typeName":{"kind":"IntTypeDesc","name":{"kind":"IntKeyword","isToken":true,"value":"int","isMissing":false,"position":{"startLine":2,"startColumn":4,"endLine":2,"endColumn":7},"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"source":"    int ","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":2,"startColumn":4,"endLine":2,"endColumn":7},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"int","signature":"int"},"symbol":{"kind":"TYPE","typeKind":"int","signature":"int"},"diagnostics":[]}},"fieldName":{"kind":"IdentifierToken","isToken":true,"value":"age","isMissing":false,"position":{"startLine":2,"startColumn":8,"endLine":2,"endColumn":11},"leadingMinutiae":[],"trailingMinutiae":[]},"semicolonToken":{"kind":"SemicolonToken","isToken":true,"value":";","isMissing":false,"position":{"startLine":2,"startColumn":11,"endLine":2,"endColumn":12},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}]},"source":"    int age;\n","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"position":{"startLine":2,"startColumn":4,"endLine":2,"endColumn":12},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"int","signature":"int"},"symbol":{"isOptional":false,"deprecated":false,"hasDefaultValue":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"RECORD_FIELD","signature":"int age"},"diagnostics":[]}}],"bodyEndDelimiter":{"kind":"CloseBracePipeToken","isToken":true,"value":"|}","isMissing":false,"position":{"startLine":3,"startColumn":0,"endLine":3,"endColumn":2},"leadingMinutiae":[],"trailingMinutiae":[]},"source":"record {|\n    string name;\n    int age;\n|}","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[],"position":{"startLine":0,"startColumn":13,"endLine":3,"endColumn":2},"typeData":{"typeSymbol":{"name":"Student","moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"definition":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"TYPE_DEFINITION","readonly":false,"moduleQualifiedName":"shariff_tester:Student"},"kind":"TYPE","typeKind":"typeReference","signature":"tharana_wanigaratne/shariff_tester:0.1.0:Student"},"diagnostics":[]}},"semicolonToken":{"kind":"SemicolonToken","isToken":true,"value":";","isMissing":false,"position":{"startLine":3,"startColumn":2,"endLine":3,"endColumn":3},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}]},"source":"type Student record {|\n    string name;\n    int age;\n|};\n","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"position":{"startLine":0,"startColumn":0,"endLine":3,"endColumn":3},"typeData":{"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"TYPE_DEFINITION","readonly":false,"moduleQualifiedName":"shariff_tester:Student"},"diagnostics":[]}},{"kind":"FunctionDefinition","qualifierList":[{"kind":"PublicKeyword","isToken":true,"value":"public","isMissing":false,"position":{"startLine":5,"startColumn":0,"endLine":5,"endColumn":6},"leadingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]}],"functionKeyword":{"kind":"FunctionKeyword","isToken":true,"value":"function","isMissing":false,"position":{"startLine":5,"startColumn":7,"endLine":5,"endColumn":15},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"functionName":{"kind":"IdentifierToken","isToken":true,"value":"main","isMissing":false,"position":{"startLine":5,"startColumn":16,"endLine":5,"endColumn":20},"leadingMinutiae":[],"trailingMinutiae":[]},"relativeResourcePath":[],"functionSignature":{"kind":"FunctionSignature","openParenToken":{"kind":"OpenParenToken","isToken":true,"value":"(","isMissing":false,"position":{"startLine":5,"startColumn":20,"endLine":5,"endColumn":21},"leadingMinutiae":[],"trailingMinutiae":[]},"parameters":[],"closeParenToken":{"kind":"CloseParenToken","isToken":true,"value":")","isMissing":false,"position":{"startLine":5,"startColumn":21,"endLine":5,"endColumn":22},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"source":"() ","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":5,"startColumn":20,"endLine":5,"endColumn":22},"typeData":{"diagnostics":[]}},"functionBody":{"kind":"FunctionBodyBlock","openBraceToken":{"kind":"OpenBraceToken","isToken":true,"value":"{","isMissing":false,"position":{"startLine":5,"startColumn":23,"endLine":5,"endColumn":24},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}]},"statements":[{"kind":"LocalVarDecl","annotations":[],"typedBindingPattern":{"kind":"TypedBindingPattern","typeDescriptor":{"kind":"IntTypeDesc","name":{"kind":"IntKeyword","isToken":true,"value":"int","isMissing":false,"position":{"startLine":6,"startColumn":4,"endLine":6,"endColumn":7},"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"source":"    int ","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":6,"startColumn":4,"endLine":6,"endColumn":7},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"int","signature":"int"},"symbol":{"kind":"TYPE","typeKind":"int","signature":"int"},"diagnostics":[]}},"bindingPattern":{"kind":"CaptureBindingPattern","variableName":{"kind":"IdentifierToken","isToken":true,"value":"x","isMissing":false,"position":{"startLine":6,"startColumn":8,"endLine":6,"endColumn":9},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"source":"x ","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":6,"startColumn":8,"endLine":6,"endColumn":9},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"int","signature":"int"},"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"VARIABLE"},"diagnostics":[]}},"source":"    int x ","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":6,"startColumn":4,"endLine":6,"endColumn":9},"typeData":{"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"VARIABLE"},"diagnostics":[]}},"equalsToken":{"kind":"EqualToken","isToken":true,"value":"=","isMissing":false,"position":{"startLine":6,"startColumn":10,"endLine":6,"endColumn":11},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"initializer":{"kind":"NumericLiteral","literalToken":{"kind":"DecimalIntegerLiteralToken","isToken":true,"value":"10","isMissing":false,"position":{"startLine":6,"startColumn":12,"endLine":6,"endColumn":14},"leadingMinutiae":[],"trailingMinutiae":[]},"source":"10","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[],"position":{"startLine":6,"startColumn":12,"endLine":6,"endColumn":14},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"int","signature":"int"},"diagnostics":[]}},"semicolonToken":{"kind":"SemicolonToken","isToken":true,"value":";","isMissing":false,"position":{"startLine":6,"startColumn":14,"endLine":6,"endColumn":15},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}]},"source":"    int x = 10;\n","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"position":{"startLine":6,"startColumn":4,"endLine":6,"endColumn":15},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"int","signature":"int"},"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"VARIABLE"},"diagnostics":[{"message":"unused variable 'x'","diagnosticInfo":{"code":"BCE20403","severity":"WARNING"}}]}},{"kind":"LocalVarDecl","annotations":[],"typedBindingPattern":{"kind":"TypedBindingPattern","typeDescriptor":{"kind":"StringTypeDesc","name":{"kind":"StringKeyword","isToken":true,"value":"string","isMissing":false,"position":{"startLine":7,"startColumn":4,"endLine":7,"endColumn":10},"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"source":"    string ","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":7,"startColumn":4,"endLine":7,"endColumn":10},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"string","signature":"string"},"symbol":{"kind":"TYPE","typeKind":"string","signature":"string"},"diagnostics":[]}},"bindingPattern":{"kind":"CaptureBindingPattern","variableName":{"kind":"IdentifierToken","isToken":true,"value":"y","isMissing":false,"position":{"startLine":7,"startColumn":11,"endLine":7,"endColumn":12},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"source":"y ","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":7,"startColumn":11,"endLine":7,"endColumn":12},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"string","signature":"string"},"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"VARIABLE"},"diagnostics":[]}},"source":"    string y ","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":7,"startColumn":4,"endLine":7,"endColumn":12},"typeData":{"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"VARIABLE"},"diagnostics":[]}},"equalsToken":{"kind":"EqualToken","isToken":true,"value":"=","isMissing":false,"position":{"startLine":7,"startColumn":13,"endLine":7,"endColumn":14},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"initializer":{"kind":"StringLiteral","literalToken":{"kind":"StringLiteralToken","isToken":true,"value":"\"hello\"","isMissing":false,"position":{"startLine":7,"startColumn":15,"endLine":7,"endColumn":22},"leadingMinutiae":[],"trailingMinutiae":[]},"source":"\"hello\"","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[],"position":{"startLine":7,"startColumn":15,"endLine":7,"endColumn":22},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"string","signature":"string"},"diagnostics":[]}},"semicolonToken":{"kind":"SemicolonToken","isToken":true,"value":";","isMissing":false,"position":{"startLine":7,"startColumn":22,"endLine":7,"endColumn":23},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}]},"source":"    string y = \"hello\";\n","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"position":{"startLine":7,"startColumn":4,"endLine":7,"endColumn":23},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"string","signature":"string"},"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"VARIABLE"},"diagnostics":[{"message":"unused variable 'y'","diagnosticInfo":{"code":"BCE20403","severity":"WARNING"}}]}},{"kind":"LocalVarDecl","annotations":[],"typedBindingPattern":{"kind":"TypedBindingPattern","typeDescriptor":{"kind":"SimpleNameReference","name":{"kind":"IdentifierToken","isToken":true,"value":"Student","isMissing":false,"position":{"startLine":8,"startColumn":4,"endLine":8,"endColumn":11},"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"source":"    Student ","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":8,"startColumn":4,"endLine":8,"endColumn":11},"typeData":{"typeSymbol":{"name":"Student","moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"definition":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"TYPE_DEFINITION","readonly":false,"moduleQualifiedName":"shariff_tester:Student"},"kind":"TYPE","typeKind":"typeReference","signature":"tharana_wanigaratne/shariff_tester:0.1.0:Student"},"symbol":{"name":"Student","moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"definition":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"TYPE_DEFINITION","readonly":false,"moduleQualifiedName":"shariff_tester:Student"},"kind":"TYPE","typeKind":"typeReference","signature":"tharana_wanigaratne/shariff_tester:0.1.0:Student"},"diagnostics":[]}},"bindingPattern":{"kind":"CaptureBindingPattern","variableName":{"kind":"IdentifierToken","isToken":true,"value":"s","isMissing":false,"position":{"startLine":8,"startColumn":12,"endLine":8,"endColumn":13},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"source":"s ","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":8,"startColumn":12,"endLine":8,"endColumn":13},"typeData":{"typeSymbol":{"name":"Student","moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"definition":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"TYPE_DEFINITION","readonly":false,"moduleQualifiedName":"shariff_tester:Student"},"kind":"TYPE","typeKind":"typeReference","signature":"tharana_wanigaratne/shariff_tester:0.1.0:Student"},"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"VARIABLE"},"diagnostics":[]}},"source":"    Student s ","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":8,"startColumn":4,"endLine":8,"endColumn":13},"typeData":{"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"VARIABLE"},"diagnostics":[]}},"equalsToken":{"kind":"EqualToken","isToken":true,"value":"=","isMissing":false,"position":{"startLine":8,"startColumn":14,"endLine":8,"endColumn":15},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"initializer":{"kind":"FunctionCall","functionName":{"kind":"SimpleNameReference","name":{"kind":"IdentifierToken","isToken":true,"value":"test","isMissing":false,"position":{"startLine":8,"startColumn":16,"endLine":8,"endColumn":20},"leadingMinutiae":[],"trailingMinutiae":[]},"source":"test","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[],"position":{"startLine":8,"startColumn":16,"endLine":8,"endColumn":20},"typeData":{"typeSymbol":{"name":"Student","moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"definition":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"TYPE_DEFINITION","readonly":false,"moduleQualifiedName":"shariff_tester:Student"},"kind":"TYPE","typeKind":"typeReference","signature":"tharana_wanigaratne/shariff_tester:0.1.0:Student"},"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"FUNCTION","external":false},"diagnostics":[]}},"openParenToken":{"kind":"OpenParenToken","isToken":true,"value":"(","isMissing":false,"position":{"startLine":8,"startColumn":20,"endLine":8,"endColumn":21},"leadingMinutiae":[],"trailingMinutiae":[]},"arguments":[],"closeParenToken":{"kind":"CloseParenToken","isToken":true,"value":")","isMissing":false,"position":{"startLine":8,"startColumn":21,"endLine":8,"endColumn":22},"leadingMinutiae":[],"trailingMinutiae":[]},"source":"test()","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[],"position":{"startLine":8,"startColumn":16,"endLine":8,"endColumn":22},"typeData":{"typeSymbol":{"name":"Student","moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"definition":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"TYPE_DEFINITION","readonly":false,"moduleQualifiedName":"shariff_tester:Student"},"kind":"TYPE","typeKind":"typeReference","signature":"tharana_wanigaratne/shariff_tester:0.1.0:Student"},"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"FUNCTION","external":false},"diagnostics":[]}},"semicolonToken":{"kind":"SemicolonToken","isToken":true,"value":";","isMissing":false,"position":{"startLine":8,"startColumn":22,"endLine":8,"endColumn":23},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}]},"source":"    Student s = test();\n","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"position":{"startLine":8,"startColumn":4,"endLine":8,"endColumn":23},"typeData":{"typeSymbol":{"name":"Student","moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"definition":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"TYPE_DEFINITION","readonly":false,"moduleQualifiedName":"shariff_tester:Student"},"kind":"TYPE","typeKind":"typeReference","signature":"tharana_wanigaratne/shariff_tester:0.1.0:Student"},"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"VARIABLE"},"diagnostics":[{"message":"unused variable 's'","diagnosticInfo":{"code":"BCE20403","severity":"WARNING"}}]}}],"closeBraceToken":{"kind":"CloseBraceToken","isToken":true,"value":"}","isMissing":false,"position":{"startLine":9,"startColumn":0,"endLine":9,"endColumn":1},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}]},"source":"{\n    int x = 10;\n    string y = \"hello\";\n    Student s = test();\n}\n","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"position":{"startLine":5,"startColumn":23,"endLine":9,"endColumn":1},"typeData":{"diagnostics":[{"message":"unused variable 'x'","diagnosticInfo":{"code":"BCE20403","severity":"WARNING"}},{"message":"unused variable 'y'","diagnosticInfo":{"code":"BCE20403","severity":"WARNING"}},{"message":"unused variable 's'","diagnosticInfo":{"code":"BCE20403","severity":"WARNING"}}]}},"source":"\npublic function main() {\n    int x = 10;\n    string y = \"hello\";\n    Student s = test();\n}\n","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"position":{"startLine":5,"startColumn":0,"endLine":9,"endColumn":1},"typeData":{"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"FUNCTION","external":false},"diagnostics":[{"message":"unused variable 'x'","diagnosticInfo":{"code":"BCE20403","severity":"WARNING"}},{"message":"unused variable 'y'","diagnosticInfo":{"code":"BCE20403","severity":"WARNING"}},{"message":"unused variable 's'","diagnosticInfo":{"code":"BCE20403","severity":"WARNING"}}]}},{"kind":"FunctionDefinition","qualifierList":[{"kind":"PublicKeyword","isToken":true,"value":"public","isMissing":false,"position":{"startLine":11,"startColumn":0,"endLine":11,"endColumn":6},"leadingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]}],"functionKeyword":{"kind":"FunctionKeyword","isToken":true,"value":"function","isMissing":false,"position":{"startLine":11,"startColumn":7,"endLine":11,"endColumn":15},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"functionName":{"kind":"IdentifierToken","isToken":true,"value":"test","isMissing":false,"position":{"startLine":11,"startColumn":16,"endLine":11,"endColumn":20},"leadingMinutiae":[],"trailingMinutiae":[]},"relativeResourcePath":[],"functionSignature":{"kind":"FunctionSignature","openParenToken":{"kind":"OpenParenToken","isToken":true,"value":"(","isMissing":false,"position":{"startLine":11,"startColumn":20,"endLine":11,"endColumn":21},"leadingMinutiae":[],"trailingMinutiae":[]},"parameters":[],"closeParenToken":{"kind":"CloseParenToken","isToken":true,"value":")","isMissing":false,"position":{"startLine":11,"startColumn":21,"endLine":11,"endColumn":22},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"returnTypeDesc":{"kind":"ReturnTypeDescriptor","returnsKeyword":{"kind":"ReturnsKeyword","isToken":true,"value":"returns","isMissing":false,"position":{"startLine":11,"startColumn":23,"endLine":11,"endColumn":30},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"annotations":[],"type":{"kind":"SimpleNameReference","name":{"kind":"IdentifierToken","isToken":true,"value":"Student","isMissing":false,"position":{"startLine":11,"startColumn":31,"endLine":11,"endColumn":38},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"source":"Student ","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":11,"startColumn":31,"endLine":11,"endColumn":38},"typeData":{"typeSymbol":{"name":"Student","moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"definition":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"TYPE_DEFINITION","readonly":false,"moduleQualifiedName":"shariff_tester:Student"},"kind":"TYPE","typeKind":"typeReference","signature":"tharana_wanigaratne/shariff_tester:0.1.0:Student"},"symbol":{"name":"Student","moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"definition":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"TYPE_DEFINITION","readonly":false,"moduleQualifiedName":"shariff_tester:Student"},"kind":"TYPE","typeKind":"typeReference","signature":"tharana_wanigaratne/shariff_tester:0.1.0:Student"},"diagnostics":[{"message":"attempt to expose non-public symbol 'Student'","diagnosticInfo":{"code":"BCE20022","severity":"WARNING"}}]}},"source":"returns Student ","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":11,"startColumn":23,"endLine":11,"endColumn":38},"typeData":{"diagnostics":[{"message":"attempt to expose non-public symbol 'Student'","diagnosticInfo":{"code":"BCE20022","severity":"WARNING"}}]}},"source":"() returns Student ","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}],"position":{"startLine":11,"startColumn":20,"endLine":11,"endColumn":38},"typeData":{"diagnostics":[{"message":"attempt to expose non-public symbol 'Student'","diagnosticInfo":{"code":"BCE20022","severity":"WARNING"}}]}},"functionBody":{"kind":"FunctionBodyBlock","openBraceToken":{"kind":"OpenBraceToken","isToken":true,"value":"{","isMissing":false,"position":{"startLine":11,"startColumn":39,"endLine":11,"endColumn":40},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}]},"statements":[{"kind":"ReturnStatement","returnKeyword":{"kind":"ReturnKeyword","isToken":true,"value":"return","isMissing":false,"position":{"startLine":12,"startColumn":4,"endLine":12,"endColumn":10},"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"expression":{"kind":"MappingConstructor","openBrace":{"kind":"OpenBraceToken","isToken":true,"value":"{","isMissing":false,"position":{"startLine":12,"startColumn":11,"endLine":12,"endColumn":12},"leadingMinutiae":[],"trailingMinutiae":[]},"fields":[{"kind":"SpecificField","fieldName":{"kind":"IdentifierToken","isToken":true,"value":"name","isMissing":false,"position":{"startLine":12,"startColumn":12,"endLine":12,"endColumn":16},"leadingMinutiae":[],"trailingMinutiae":[]},"colon":{"kind":"ColonToken","isToken":true,"value":":","isMissing":false,"position":{"startLine":12,"startColumn":16,"endLine":12,"endColumn":17},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"valueExpr":{"kind":"StringLiteral","literalToken":{"kind":"StringLiteralToken","isToken":true,"value":"\"John\"","isMissing":false,"position":{"startLine":12,"startColumn":18,"endLine":12,"endColumn":24},"leadingMinutiae":[],"trailingMinutiae":[]},"source":"\"John\"","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[],"position":{"startLine":12,"startColumn":18,"endLine":12,"endColumn":24},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"string","signature":"string"},"diagnostics":[]}},"source":"name: \"John\"","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[],"position":{"startLine":12,"startColumn":12,"endLine":12,"endColumn":24},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"string","signature":"string"},"symbol":{"isOptional":false,"deprecated":false,"hasDefaultValue":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"RECORD_FIELD","signature":"string name"},"diagnostics":[]}},{"kind":"CommaToken","isToken":true,"value":",","isMissing":false,"position":{"startLine":12,"startColumn":24,"endLine":12,"endColumn":25},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},{"kind":"SpecificField","fieldName":{"kind":"IdentifierToken","isToken":true,"value":"age","isMissing":false,"position":{"startLine":12,"startColumn":26,"endLine":12,"endColumn":29},"leadingMinutiae":[],"trailingMinutiae":[]},"colon":{"kind":"ColonToken","isToken":true,"value":":","isMissing":false,"position":{"startLine":12,"startColumn":29,"endLine":12,"endColumn":30},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":" ","isInvalid":false}]},"valueExpr":{"kind":"NumericLiteral","literalToken":{"kind":"DecimalIntegerLiteralToken","isToken":true,"value":"20","isMissing":false,"position":{"startLine":12,"startColumn":31,"endLine":12,"endColumn":33},"leadingMinutiae":[],"trailingMinutiae":[]},"source":"20","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[],"position":{"startLine":12,"startColumn":31,"endLine":12,"endColumn":33},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"int","signature":"int"},"diagnostics":[]}},"source":"age: 20","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[],"position":{"startLine":12,"startColumn":26,"endLine":12,"endColumn":33},"typeData":{"typeSymbol":{"kind":"TYPE","typeKind":"int","signature":"int"},"symbol":{"isOptional":false,"deprecated":false,"hasDefaultValue":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"RECORD_FIELD","signature":"int age"},"diagnostics":[]}}],"closeBrace":{"kind":"CloseBraceToken","isToken":true,"value":"}","isMissing":false,"position":{"startLine":12,"startColumn":33,"endLine":12,"endColumn":34},"leadingMinutiae":[],"trailingMinutiae":[]},"source":"{name: \"John\", age: 20}","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[],"position":{"startLine":12,"startColumn":11,"endLine":12,"endColumn":34},"typeData":{"typeSymbol":{"name":"Student","moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"definition":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"TYPE_DEFINITION","readonly":false,"moduleQualifiedName":"shariff_tester:Student"},"kind":"TYPE","typeKind":"typeReference","signature":"tharana_wanigaratne/shariff_tester:0.1.0:Student"},"diagnostics":[]}},"semicolonToken":{"kind":"SemicolonToken","isToken":true,"value":";","isMissing":false,"position":{"startLine":12,"startColumn":34,"endLine":12,"endColumn":35},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}]},"source":"    return {name: \"John\", age: 20};\n","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"WHITESPACE_MINUTIAE","minutiae":"    ","isInvalid":false}],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"position":{"startLine":12,"startColumn":4,"endLine":12,"endColumn":35},"typeData":{"diagnostics":[]}}],"closeBraceToken":{"kind":"CloseBraceToken","isToken":true,"value":"}","isMissing":false,"position":{"startLine":13,"startColumn":0,"endLine":13,"endColumn":1},"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}]},"source":"{\n    return {name: \"John\", age: 20};\n}\n","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"position":{"startLine":11,"startColumn":39,"endLine":13,"endColumn":1},"typeData":{"diagnostics":[]}},"source":"\npublic function test() returns Student {\n    return {name: \"John\", age: 20};\n}\n","syntaxDiagnostics":[],"leadingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"trailingMinutiae":[{"kind":"END_OF_LINE_MINUTIAE","minutiae":"\n","isInvalid":false}],"position":{"startLine":11,"startColumn":0,"endLine":13,"endColumn":1},"typeData":{"symbol":{"deprecated":false,"moduleID":{"orgName":"tharana_wanigaratne","packageName":"shariff_tester","moduleName":"shariff_tester","version":"0.1.0"},"kind":"FUNCTION","external":false},"diagnostics":[{"message":"attempt to expose non-public symbol 'Student'","diagnosticInfo":{"code":"BCE20022","severity":"WARNING"}}]}}],"eofToken":{"kind":"EofToken","isToken":true,"value":"","isMissing":false,"position":{"startLine":14,"startColumn":0,"endLine":14,"endColumn":0},"leadingMinutiae":[],"trailingMinutiae":[]},"source":"type Student record {|\n    string name;\n    int age;\n|};\n\npublic function main() {\n    int x = 10;\n    string y = \"hello\";\n    Student s = test();\n}\n\npublic function test() returns Student {\n    return {name: \"John\", age: 20};\n}\n","kind":"ModulePart","syntaxDiagnostics":[],"leadingMinutiae":[],"trailingMinutiae":[],"position":{"startLine":0,"startColumn":0,"endLine":13,"endColumn":1},"typeData":{"diagnostics":[{"message":"unused variable 'x'","diagnosticInfo":{"code":"BCE20403","severity":"WARNING"}},{"message":"unused variable 'y'","diagnosticInfo":{"code":"BCE20403","severity":"WARNING"}},{"message":"unused variable 's'","diagnosticInfo":{"code":"BCE20403","severity":"WARNING"}},{"message":"attempt to expose non-public symbol 'Student'","diagnosticInfo":{"code":"BCE20022","severity":"WARNING"}}]}}}}}}}
+{
+  "ballerinaVersion": "2201.7.2",
+  "packageOrg": "tharana_wanigaratne",
+  "packageName": "shariff_tester",
+  "packageVersion": "0.1.0",
+  "modules": {
+    "shariff_tester": {
+      "moduleName": "shariff_tester",
+      "documents": {
+        "main.bal": {
+          "documentName": "main.bal",
+          "syntaxTree": {
+            "imports": [],
+            "members": [
+              {
+                "kind": "FunctionDefinition",
+                "qualifierList": [
+                  {
+                    "kind": "PublicKeyword",
+                    "isToken": true,
+                    "value": "public",
+                    "isMissing": false,
+                    "position": {
+                      "startLine": 1,
+                      "startColumn": 0,
+                      "endLine": 1,
+                      "endColumn": 6
+                    },
+                    "leadingMinutiae": [
+                      {
+                        "kind": "COMMENT_MINUTIAE",
+                        "minutiae": "// Non-compliant as the function has too many parameters",
+                        "isInvalid": false
+                      },
+                      {
+                        "kind": "END_OF_LINE_MINUTIAE",
+                        "minutiae": "\n",
+                        "isInvalid": false
+                      }
+                    ],
+                    "trailingMinutiae": [
+                      {
+                        "kind": "WHITESPACE_MINUTIAE",
+                        "minutiae": " ",
+                        "isInvalid": false
+                      }
+                    ]
+                  }
+                ],
+                "functionKeyword": {
+                  "kind": "FunctionKeyword",
+                  "isToken": true,
+                  "value": "function",
+                  "isMissing": false,
+                  "position": {
+                    "startLine": 1,
+                    "startColumn": 7,
+                    "endLine": 1,
+                    "endColumn": 15
+                  },
+                  "leadingMinutiae": [],
+                  "trailingMinutiae": [
+                    {
+                      "kind": "WHITESPACE_MINUTIAE",
+                      "minutiae": " ",
+                      "isInvalid": false
+                    }
+                  ]
+                },
+                "functionName": {
+                  "kind": "IdentifierToken",
+                  "isToken": true,
+                  "value": "tooManyParametersFunc",
+                  "isMissing": false,
+                  "position": {
+                    "startLine": 1,
+                    "startColumn": 16,
+                    "endLine": 1,
+                    "endColumn": 37
+                  },
+                  "leadingMinutiae": [],
+                  "trailingMinutiae": []
+                },
+                "relativeResourcePath": [],
+                "functionSignature": {
+                  "kind": "FunctionSignature",
+                  "openParenToken": {
+                    "kind": "OpenParenToken",
+                    "isToken": true,
+                    "value": "(",
+                    "isMissing": false,
+                    "position": {
+                      "startLine": 1,
+                      "startColumn": 37,
+                      "endLine": 1,
+                      "endColumn": 38
+                    },
+                    "leadingMinutiae": [],
+                    "trailingMinutiae": []
+                  },
+                  "parameters": [
+                    {
+                      "kind": "RequiredParam",
+                      "annotations": [],
+                      "typeName": {
+                        "kind": "IntTypeDesc",
+                        "name": {
+                          "kind": "IntKeyword",
+                          "isToken": true,
+                          "value": "int",
+                          "isMissing": false,
+                          "position": {
+                            "startLine": 1,
+                            "startColumn": 38,
+                            "endLine": 1,
+                            "endColumn": 41
+                          },
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": " ",
+                              "isInvalid": false
+                            }
+                          ]
+                        },
+                        "source": "int ",
+                        "syntaxDiagnostics": [],
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": " ",
+                            "isInvalid": false
+                          }
+                        ],
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 38,
+                          "endLine": 1,
+                          "endColumn": 41
+                        },
+                        "typeData": {
+                          "typeSymbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "symbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "diagnostics": []
+                        }
+                      },
+                      "paramName": {
+                        "kind": "IdentifierToken",
+                        "isToken": true,
+                        "value": "a",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 42,
+                          "endLine": 1,
+                          "endColumn": 43
+                        },
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": []
+                      },
+                      "source": "int a",
+                      "syntaxDiagnostics": [],
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [],
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 38,
+                        "endLine": 1,
+                        "endColumn": 43
+                      },
+                      "typeData": {
+                        "typeSymbol": {
+                          "kind": "TYPE",
+                          "typeKind": "int",
+                          "signature": "int"
+                        },
+                        "symbol": {
+                          "moduleID": {
+                            "orgName": "tharana_wanigaratne",
+                            "packageName": "shariff_tester",
+                            "moduleName": "shariff_tester",
+                            "version": "0.1.0"
+                          },
+                          "kind": "PARAMETER",
+                          "signature": "int a"
+                        },
+                        "diagnostics": []
+                      }
+                    },
+                    {
+                      "kind": "CommaToken",
+                      "isToken": true,
+                      "value": ",",
+                      "isMissing": false,
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 43,
+                        "endLine": 1,
+                        "endColumn": 44
+                      },
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [
+                        {
+                          "kind": "WHITESPACE_MINUTIAE",
+                          "minutiae": " ",
+                          "isInvalid": false
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "RequiredParam",
+                      "annotations": [],
+                      "typeName": {
+                        "kind": "IntTypeDesc",
+                        "name": {
+                          "kind": "IntKeyword",
+                          "isToken": true,
+                          "value": "int",
+                          "isMissing": false,
+                          "position": {
+                            "startLine": 1,
+                            "startColumn": 45,
+                            "endLine": 1,
+                            "endColumn": 48
+                          },
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": " ",
+                              "isInvalid": false
+                            }
+                          ]
+                        },
+                        "source": "int ",
+                        "syntaxDiagnostics": [],
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": " ",
+                            "isInvalid": false
+                          }
+                        ],
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 45,
+                          "endLine": 1,
+                          "endColumn": 48
+                        },
+                        "typeData": {
+                          "typeSymbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "symbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "diagnostics": []
+                        }
+                      },
+                      "paramName": {
+                        "kind": "IdentifierToken",
+                        "isToken": true,
+                        "value": "b",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 49,
+                          "endLine": 1,
+                          "endColumn": 50
+                        },
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": []
+                      },
+                      "source": "int b",
+                      "syntaxDiagnostics": [],
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [],
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 45,
+                        "endLine": 1,
+                        "endColumn": 50
+                      },
+                      "typeData": {
+                        "typeSymbol": {
+                          "kind": "TYPE",
+                          "typeKind": "int",
+                          "signature": "int"
+                        },
+                        "symbol": {
+                          "moduleID": {
+                            "orgName": "tharana_wanigaratne",
+                            "packageName": "shariff_tester",
+                            "moduleName": "shariff_tester",
+                            "version": "0.1.0"
+                          },
+                          "kind": "PARAMETER",
+                          "signature": "int b"
+                        },
+                        "diagnostics": []
+                      }
+                    },
+                    {
+                      "kind": "CommaToken",
+                      "isToken": true,
+                      "value": ",",
+                      "isMissing": false,
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 50,
+                        "endLine": 1,
+                        "endColumn": 51
+                      },
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [
+                        {
+                          "kind": "WHITESPACE_MINUTIAE",
+                          "minutiae": " ",
+                          "isInvalid": false
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "RequiredParam",
+                      "annotations": [],
+                      "typeName": {
+                        "kind": "IntTypeDesc",
+                        "name": {
+                          "kind": "IntKeyword",
+                          "isToken": true,
+                          "value": "int",
+                          "isMissing": false,
+                          "position": {
+                            "startLine": 1,
+                            "startColumn": 52,
+                            "endLine": 1,
+                            "endColumn": 55
+                          },
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": " ",
+                              "isInvalid": false
+                            }
+                          ]
+                        },
+                        "source": "int ",
+                        "syntaxDiagnostics": [],
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": " ",
+                            "isInvalid": false
+                          }
+                        ],
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 52,
+                          "endLine": 1,
+                          "endColumn": 55
+                        },
+                        "typeData": {
+                          "typeSymbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "symbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "diagnostics": []
+                        }
+                      },
+                      "paramName": {
+                        "kind": "IdentifierToken",
+                        "isToken": true,
+                        "value": "c",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 56,
+                          "endLine": 1,
+                          "endColumn": 57
+                        },
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": []
+                      },
+                      "source": "int c",
+                      "syntaxDiagnostics": [],
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [],
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 52,
+                        "endLine": 1,
+                        "endColumn": 57
+                      },
+                      "typeData": {
+                        "typeSymbol": {
+                          "kind": "TYPE",
+                          "typeKind": "int",
+                          "signature": "int"
+                        },
+                        "symbol": {
+                          "moduleID": {
+                            "orgName": "tharana_wanigaratne",
+                            "packageName": "shariff_tester",
+                            "moduleName": "shariff_tester",
+                            "version": "0.1.0"
+                          },
+                          "kind": "PARAMETER",
+                          "signature": "int c"
+                        },
+                        "diagnostics": []
+                      }
+                    },
+                    {
+                      "kind": "CommaToken",
+                      "isToken": true,
+                      "value": ",",
+                      "isMissing": false,
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 57,
+                        "endLine": 1,
+                        "endColumn": 58
+                      },
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [
+                        {
+                          "kind": "WHITESPACE_MINUTIAE",
+                          "minutiae": " ",
+                          "isInvalid": false
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "RequiredParam",
+                      "annotations": [],
+                      "typeName": {
+                        "kind": "IntTypeDesc",
+                        "name": {
+                          "kind": "IntKeyword",
+                          "isToken": true,
+                          "value": "int",
+                          "isMissing": false,
+                          "position": {
+                            "startLine": 1,
+                            "startColumn": 59,
+                            "endLine": 1,
+                            "endColumn": 62
+                          },
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": " ",
+                              "isInvalid": false
+                            }
+                          ]
+                        },
+                        "source": "int ",
+                        "syntaxDiagnostics": [],
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": " ",
+                            "isInvalid": false
+                          }
+                        ],
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 59,
+                          "endLine": 1,
+                          "endColumn": 62
+                        },
+                        "typeData": {
+                          "typeSymbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "symbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "diagnostics": []
+                        }
+                      },
+                      "paramName": {
+                        "kind": "IdentifierToken",
+                        "isToken": true,
+                        "value": "d",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 63,
+                          "endLine": 1,
+                          "endColumn": 64
+                        },
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": []
+                      },
+                      "source": "int d",
+                      "syntaxDiagnostics": [],
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [],
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 59,
+                        "endLine": 1,
+                        "endColumn": 64
+                      },
+                      "typeData": {
+                        "typeSymbol": {
+                          "kind": "TYPE",
+                          "typeKind": "int",
+                          "signature": "int"
+                        },
+                        "symbol": {
+                          "moduleID": {
+                            "orgName": "tharana_wanigaratne",
+                            "packageName": "shariff_tester",
+                            "moduleName": "shariff_tester",
+                            "version": "0.1.0"
+                          },
+                          "kind": "PARAMETER",
+                          "signature": "int d"
+                        },
+                        "diagnostics": []
+                      }
+                    },
+                    {
+                      "kind": "CommaToken",
+                      "isToken": true,
+                      "value": ",",
+                      "isMissing": false,
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 64,
+                        "endLine": 1,
+                        "endColumn": 65
+                      },
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [
+                        {
+                          "kind": "WHITESPACE_MINUTIAE",
+                          "minutiae": " ",
+                          "isInvalid": false
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "RequiredParam",
+                      "annotations": [],
+                      "typeName": {
+                        "kind": "IntTypeDesc",
+                        "name": {
+                          "kind": "IntKeyword",
+                          "isToken": true,
+                          "value": "int",
+                          "isMissing": false,
+                          "position": {
+                            "startLine": 1,
+                            "startColumn": 66,
+                            "endLine": 1,
+                            "endColumn": 69
+                          },
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": " ",
+                              "isInvalid": false
+                            }
+                          ]
+                        },
+                        "source": "int ",
+                        "syntaxDiagnostics": [],
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": " ",
+                            "isInvalid": false
+                          }
+                        ],
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 66,
+                          "endLine": 1,
+                          "endColumn": 69
+                        },
+                        "typeData": {
+                          "typeSymbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "symbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "diagnostics": []
+                        }
+                      },
+                      "paramName": {
+                        "kind": "IdentifierToken",
+                        "isToken": true,
+                        "value": "e",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 70,
+                          "endLine": 1,
+                          "endColumn": 71
+                        },
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": []
+                      },
+                      "source": "int e",
+                      "syntaxDiagnostics": [],
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [],
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 66,
+                        "endLine": 1,
+                        "endColumn": 71
+                      },
+                      "typeData": {
+                        "typeSymbol": {
+                          "kind": "TYPE",
+                          "typeKind": "int",
+                          "signature": "int"
+                        },
+                        "symbol": {
+                          "moduleID": {
+                            "orgName": "tharana_wanigaratne",
+                            "packageName": "shariff_tester",
+                            "moduleName": "shariff_tester",
+                            "version": "0.1.0"
+                          },
+                          "kind": "PARAMETER",
+                          "signature": "int e"
+                        },
+                        "diagnostics": []
+                      }
+                    },
+                    {
+                      "kind": "CommaToken",
+                      "isToken": true,
+                      "value": ",",
+                      "isMissing": false,
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 71,
+                        "endLine": 1,
+                        "endColumn": 72
+                      },
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [
+                        {
+                          "kind": "WHITESPACE_MINUTIAE",
+                          "minutiae": " ",
+                          "isInvalid": false
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "RequiredParam",
+                      "annotations": [],
+                      "typeName": {
+                        "kind": "IntTypeDesc",
+                        "name": {
+                          "kind": "IntKeyword",
+                          "isToken": true,
+                          "value": "int",
+                          "isMissing": false,
+                          "position": {
+                            "startLine": 1,
+                            "startColumn": 73,
+                            "endLine": 1,
+                            "endColumn": 76
+                          },
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": " ",
+                              "isInvalid": false
+                            }
+                          ]
+                        },
+                        "source": "int ",
+                        "syntaxDiagnostics": [],
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": " ",
+                            "isInvalid": false
+                          }
+                        ],
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 73,
+                          "endLine": 1,
+                          "endColumn": 76
+                        },
+                        "typeData": {
+                          "typeSymbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "symbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "diagnostics": []
+                        }
+                      },
+                      "paramName": {
+                        "kind": "IdentifierToken",
+                        "isToken": true,
+                        "value": "f",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 77,
+                          "endLine": 1,
+                          "endColumn": 78
+                        },
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": []
+                      },
+                      "source": "int f",
+                      "syntaxDiagnostics": [],
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [],
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 73,
+                        "endLine": 1,
+                        "endColumn": 78
+                      },
+                      "typeData": {
+                        "typeSymbol": {
+                          "kind": "TYPE",
+                          "typeKind": "int",
+                          "signature": "int"
+                        },
+                        "symbol": {
+                          "moduleID": {
+                            "orgName": "tharana_wanigaratne",
+                            "packageName": "shariff_tester",
+                            "moduleName": "shariff_tester",
+                            "version": "0.1.0"
+                          },
+                          "kind": "PARAMETER",
+                          "signature": "int f"
+                        },
+                        "diagnostics": []
+                      }
+                    },
+                    {
+                      "kind": "CommaToken",
+                      "isToken": true,
+                      "value": ",",
+                      "isMissing": false,
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 78,
+                        "endLine": 1,
+                        "endColumn": 79
+                      },
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [
+                        {
+                          "kind": "WHITESPACE_MINUTIAE",
+                          "minutiae": " ",
+                          "isInvalid": false
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "RequiredParam",
+                      "annotations": [],
+                      "typeName": {
+                        "kind": "IntTypeDesc",
+                        "name": {
+                          "kind": "IntKeyword",
+                          "isToken": true,
+                          "value": "int",
+                          "isMissing": false,
+                          "position": {
+                            "startLine": 1,
+                            "startColumn": 80,
+                            "endLine": 1,
+                            "endColumn": 83
+                          },
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": " ",
+                              "isInvalid": false
+                            }
+                          ]
+                        },
+                        "source": "int ",
+                        "syntaxDiagnostics": [],
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": " ",
+                            "isInvalid": false
+                          }
+                        ],
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 80,
+                          "endLine": 1,
+                          "endColumn": 83
+                        },
+                        "typeData": {
+                          "typeSymbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "symbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "diagnostics": []
+                        }
+                      },
+                      "paramName": {
+                        "kind": "IdentifierToken",
+                        "isToken": true,
+                        "value": "g",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 84,
+                          "endLine": 1,
+                          "endColumn": 85
+                        },
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": []
+                      },
+                      "source": "int g",
+                      "syntaxDiagnostics": [],
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [],
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 80,
+                        "endLine": 1,
+                        "endColumn": 85
+                      },
+                      "typeData": {
+                        "typeSymbol": {
+                          "kind": "TYPE",
+                          "typeKind": "int",
+                          "signature": "int"
+                        },
+                        "symbol": {
+                          "moduleID": {
+                            "orgName": "tharana_wanigaratne",
+                            "packageName": "shariff_tester",
+                            "moduleName": "shariff_tester",
+                            "version": "0.1.0"
+                          },
+                          "kind": "PARAMETER",
+                          "signature": "int g"
+                        },
+                        "diagnostics": []
+                      }
+                    },
+                    {
+                      "kind": "CommaToken",
+                      "isToken": true,
+                      "value": ",",
+                      "isMissing": false,
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 85,
+                        "endLine": 1,
+                        "endColumn": 86
+                      },
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [
+                        {
+                          "kind": "WHITESPACE_MINUTIAE",
+                          "minutiae": " ",
+                          "isInvalid": false
+                        }
+                      ]
+                    },
+                    {
+                      "kind": "RequiredParam",
+                      "annotations": [],
+                      "typeName": {
+                        "kind": "IntTypeDesc",
+                        "name": {
+                          "kind": "IntKeyword",
+                          "isToken": true,
+                          "value": "int",
+                          "isMissing": false,
+                          "position": {
+                            "startLine": 1,
+                            "startColumn": 87,
+                            "endLine": 1,
+                            "endColumn": 90
+                          },
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": " ",
+                              "isInvalid": false
+                            }
+                          ]
+                        },
+                        "source": "int ",
+                        "syntaxDiagnostics": [],
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": " ",
+                            "isInvalid": false
+                          }
+                        ],
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 87,
+                          "endLine": 1,
+                          "endColumn": 90
+                        },
+                        "typeData": {
+                          "typeSymbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "symbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "diagnostics": []
+                        }
+                      },
+                      "paramName": {
+                        "kind": "IdentifierToken",
+                        "isToken": true,
+                        "value": "h",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 91,
+                          "endLine": 1,
+                          "endColumn": 92
+                        },
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": []
+                      },
+                      "source": "int h",
+                      "syntaxDiagnostics": [],
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [],
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 87,
+                        "endLine": 1,
+                        "endColumn": 92
+                      },
+                      "typeData": {
+                        "typeSymbol": {
+                          "kind": "TYPE",
+                          "typeKind": "int",
+                          "signature": "int"
+                        },
+                        "symbol": {
+                          "moduleID": {
+                            "orgName": "tharana_wanigaratne",
+                            "packageName": "shariff_tester",
+                            "moduleName": "shariff_tester",
+                            "version": "0.1.0"
+                          },
+                          "kind": "PARAMETER",
+                          "signature": "int h"
+                        },
+                        "diagnostics": []
+                      }
+                    }
+                  ],
+                  "closeParenToken": {
+                    "kind": "CloseParenToken",
+                    "isToken": true,
+                    "value": ")",
+                    "isMissing": false,
+                    "position": {
+                      "startLine": 1,
+                      "startColumn": 92,
+                      "endLine": 1,
+                      "endColumn": 93
+                    },
+                    "leadingMinutiae": [],
+                    "trailingMinutiae": [
+                      {
+                        "kind": "WHITESPACE_MINUTIAE",
+                        "minutiae": " ",
+                        "isInvalid": false
+                      }
+                    ]
+                  },
+                  "returnTypeDesc": {
+                    "kind": "ReturnTypeDescriptor",
+                    "returnsKeyword": {
+                      "kind": "ReturnsKeyword",
+                      "isToken": true,
+                      "value": "returns",
+                      "isMissing": false,
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 94,
+                        "endLine": 1,
+                        "endColumn": 101
+                      },
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [
+                        {
+                          "kind": "WHITESPACE_MINUTIAE",
+                          "minutiae": " ",
+                          "isInvalid": false
+                        }
+                      ]
+                    },
+                    "annotations": [],
+                    "type": {
+                      "kind": "IntTypeDesc",
+                      "name": {
+                        "kind": "IntKeyword",
+                        "isToken": true,
+                        "value": "int",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 1,
+                          "startColumn": 102,
+                          "endLine": 1,
+                          "endColumn": 105
+                        },
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": " ",
+                            "isInvalid": false
+                          }
+                        ]
+                      },
+                      "source": "int ",
+                      "syntaxDiagnostics": [],
+                      "leadingMinutiae": [],
+                      "trailingMinutiae": [
+                        {
+                          "kind": "WHITESPACE_MINUTIAE",
+                          "minutiae": " ",
+                          "isInvalid": false
+                        }
+                      ],
+                      "position": {
+                        "startLine": 1,
+                        "startColumn": 102,
+                        "endLine": 1,
+                        "endColumn": 105
+                      },
+                      "typeData": {
+                        "typeSymbol": {
+                          "kind": "TYPE",
+                          "typeKind": "int",
+                          "signature": "int"
+                        },
+                        "symbol": {
+                          "kind": "TYPE",
+                          "typeKind": "int",
+                          "signature": "int"
+                        },
+                        "diagnostics": []
+                      }
+                    },
+                    "source": "returns int ",
+                    "syntaxDiagnostics": [],
+                    "leadingMinutiae": [],
+                    "trailingMinutiae": [
+                      {
+                        "kind": "WHITESPACE_MINUTIAE",
+                        "minutiae": " ",
+                        "isInvalid": false
+                      }
+                    ],
+                    "position": {
+                      "startLine": 1,
+                      "startColumn": 94,
+                      "endLine": 1,
+                      "endColumn": 105
+                    },
+                    "typeData": { "diagnostics": [] }
+                  },
+                  "source": "(int a, int b, int c, int d, int e, int f, int g, int h) returns int ",
+                  "syntaxDiagnostics": [],
+                  "leadingMinutiae": [],
+                  "trailingMinutiae": [
+                    {
+                      "kind": "WHITESPACE_MINUTIAE",
+                      "minutiae": " ",
+                      "isInvalid": false
+                    }
+                  ],
+                  "position": {
+                    "startLine": 1,
+                    "startColumn": 37,
+                    "endLine": 1,
+                    "endColumn": 105
+                  },
+                  "typeData": { "diagnostics": [] }
+                },
+                "functionBody": {
+                  "kind": "FunctionBodyBlock",
+                  "openBraceToken": {
+                    "kind": "OpenBraceToken",
+                    "isToken": true,
+                    "value": "{",
+                    "isMissing": false,
+                    "position": {
+                      "startLine": 1,
+                      "startColumn": 106,
+                      "endLine": 1,
+                      "endColumn": 107
+                    },
+                    "leadingMinutiae": [],
+                    "trailingMinutiae": [
+                      {
+                        "kind": "END_OF_LINE_MINUTIAE",
+                        "minutiae": "\n",
+                        "isInvalid": false
+                      }
+                    ]
+                  },
+                  "statements": [
+                    {
+                      "kind": "ReturnStatement",
+                      "returnKeyword": {
+                        "kind": "ReturnKeyword",
+                        "isToken": true,
+                        "value": "return",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 2,
+                          "startColumn": 4,
+                          "endLine": 2,
+                          "endColumn": 10
+                        },
+                        "leadingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": "    ",
+                            "isInvalid": false
+                          }
+                        ],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": " ",
+                            "isInvalid": false
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "kind": "BinaryExpression",
+                        "lhsExpr": {
+                          "kind": "BinaryExpression",
+                          "lhsExpr": {
+                            "kind": "BinaryExpression",
+                            "lhsExpr": {
+                              "kind": "BinaryExpression",
+                              "lhsExpr": {
+                                "kind": "BinaryExpression",
+                                "lhsExpr": {
+                                  "kind": "BinaryExpression",
+                                  "lhsExpr": {
+                                    "kind": "SimpleNameReference",
+                                    "name": {
+                                      "kind": "IdentifierToken",
+                                      "isToken": true,
+                                      "value": "a",
+                                      "isMissing": false,
+                                      "position": {
+                                        "startLine": 2,
+                                        "startColumn": 11,
+                                        "endLine": 2,
+                                        "endColumn": 12
+                                      },
+                                      "leadingMinutiae": [],
+                                      "trailingMinutiae": [
+                                        {
+                                          "kind": "WHITESPACE_MINUTIAE",
+                                          "minutiae": " ",
+                                          "isInvalid": false
+                                        }
+                                      ]
+                                    },
+                                    "source": "a ",
+                                    "syntaxDiagnostics": [],
+                                    "leadingMinutiae": [],
+                                    "trailingMinutiae": [
+                                      {
+                                        "kind": "WHITESPACE_MINUTIAE",
+                                        "minutiae": " ",
+                                        "isInvalid": false
+                                      }
+                                    ],
+                                    "position": {
+                                      "startLine": 2,
+                                      "startColumn": 11,
+                                      "endLine": 2,
+                                      "endColumn": 12
+                                    },
+                                    "typeData": {
+                                      "typeSymbol": {
+                                        "kind": "TYPE",
+                                        "typeKind": "int",
+                                        "signature": "int"
+                                      },
+                                      "symbol": {
+                                        "moduleID": {
+                                          "orgName": "tharana_wanigaratne",
+                                          "packageName": "shariff_tester",
+                                          "moduleName": "shariff_tester",
+                                          "version": "0.1.0"
+                                        },
+                                        "kind": "PARAMETER",
+                                        "signature": "int a"
+                                      },
+                                      "diagnostics": []
+                                    }
+                                  },
+                                  "operator": {
+                                    "kind": "PlusToken",
+                                    "isToken": true,
+                                    "value": "+",
+                                    "isMissing": false,
+                                    "position": {
+                                      "startLine": 2,
+                                      "startColumn": 13,
+                                      "endLine": 2,
+                                      "endColumn": 14
+                                    },
+                                    "leadingMinutiae": [],
+                                    "trailingMinutiae": [
+                                      {
+                                        "kind": "WHITESPACE_MINUTIAE",
+                                        "minutiae": " ",
+                                        "isInvalid": false
+                                      }
+                                    ]
+                                  },
+                                  "rhsExpr": {
+                                    "kind": "SimpleNameReference",
+                                    "name": {
+                                      "kind": "IdentifierToken",
+                                      "isToken": true,
+                                      "value": "b",
+                                      "isMissing": false,
+                                      "position": {
+                                        "startLine": 2,
+                                        "startColumn": 15,
+                                        "endLine": 2,
+                                        "endColumn": 16
+                                      },
+                                      "leadingMinutiae": [],
+                                      "trailingMinutiae": [
+                                        {
+                                          "kind": "WHITESPACE_MINUTIAE",
+                                          "minutiae": " ",
+                                          "isInvalid": false
+                                        }
+                                      ]
+                                    },
+                                    "source": "b ",
+                                    "syntaxDiagnostics": [],
+                                    "leadingMinutiae": [],
+                                    "trailingMinutiae": [
+                                      {
+                                        "kind": "WHITESPACE_MINUTIAE",
+                                        "minutiae": " ",
+                                        "isInvalid": false
+                                      }
+                                    ],
+                                    "position": {
+                                      "startLine": 2,
+                                      "startColumn": 15,
+                                      "endLine": 2,
+                                      "endColumn": 16
+                                    },
+                                    "typeData": {
+                                      "typeSymbol": {
+                                        "kind": "TYPE",
+                                        "typeKind": "int",
+                                        "signature": "int"
+                                      },
+                                      "symbol": {
+                                        "moduleID": {
+                                          "orgName": "tharana_wanigaratne",
+                                          "packageName": "shariff_tester",
+                                          "moduleName": "shariff_tester",
+                                          "version": "0.1.0"
+                                        },
+                                        "kind": "PARAMETER",
+                                        "signature": "int b"
+                                      },
+                                      "diagnostics": []
+                                    }
+                                  },
+                                  "source": "a + b ",
+                                  "syntaxDiagnostics": [],
+                                  "leadingMinutiae": [],
+                                  "trailingMinutiae": [
+                                    {
+                                      "kind": "WHITESPACE_MINUTIAE",
+                                      "minutiae": " ",
+                                      "isInvalid": false
+                                    }
+                                  ],
+                                  "position": {
+                                    "startLine": 2,
+                                    "startColumn": 11,
+                                    "endLine": 2,
+                                    "endColumn": 16
+                                  },
+                                  "typeData": {
+                                    "typeSymbol": {
+                                      "kind": "TYPE",
+                                      "typeKind": "int",
+                                      "signature": "int"
+                                    },
+                                    "symbol": {
+                                      "moduleID": {
+                                        "orgName": "tharana_wanigaratne",
+                                        "packageName": "shariff_tester",
+                                        "moduleName": "shariff_tester",
+                                        "version": "0.1.0"
+                                      },
+                                      "kind": "PARAMETER",
+                                      "signature": "int a"
+                                    },
+                                    "diagnostics": []
+                                  }
+                                },
+                                "operator": {
+                                  "kind": "PlusToken",
+                                  "isToken": true,
+                                  "value": "+",
+                                  "isMissing": false,
+                                  "position": {
+                                    "startLine": 2,
+                                    "startColumn": 17,
+                                    "endLine": 2,
+                                    "endColumn": 18
+                                  },
+                                  "leadingMinutiae": [],
+                                  "trailingMinutiae": [
+                                    {
+                                      "kind": "WHITESPACE_MINUTIAE",
+                                      "minutiae": " ",
+                                      "isInvalid": false
+                                    }
+                                  ]
+                                },
+                                "rhsExpr": {
+                                  "kind": "SimpleNameReference",
+                                  "name": {
+                                    "kind": "IdentifierToken",
+                                    "isToken": true,
+                                    "value": "c",
+                                    "isMissing": false,
+                                    "position": {
+                                      "startLine": 2,
+                                      "startColumn": 19,
+                                      "endLine": 2,
+                                      "endColumn": 20
+                                    },
+                                    "leadingMinutiae": [],
+                                    "trailingMinutiae": [
+                                      {
+                                        "kind": "WHITESPACE_MINUTIAE",
+                                        "minutiae": " ",
+                                        "isInvalid": false
+                                      }
+                                    ]
+                                  },
+                                  "source": "c ",
+                                  "syntaxDiagnostics": [],
+                                  "leadingMinutiae": [],
+                                  "trailingMinutiae": [
+                                    {
+                                      "kind": "WHITESPACE_MINUTIAE",
+                                      "minutiae": " ",
+                                      "isInvalid": false
+                                    }
+                                  ],
+                                  "position": {
+                                    "startLine": 2,
+                                    "startColumn": 19,
+                                    "endLine": 2,
+                                    "endColumn": 20
+                                  },
+                                  "typeData": {
+                                    "typeSymbol": {
+                                      "kind": "TYPE",
+                                      "typeKind": "int",
+                                      "signature": "int"
+                                    },
+                                    "symbol": {
+                                      "moduleID": {
+                                        "orgName": "tharana_wanigaratne",
+                                        "packageName": "shariff_tester",
+                                        "moduleName": "shariff_tester",
+                                        "version": "0.1.0"
+                                      },
+                                      "kind": "PARAMETER",
+                                      "signature": "int c"
+                                    },
+                                    "diagnostics": []
+                                  }
+                                },
+                                "source": "a + b + c ",
+                                "syntaxDiagnostics": [],
+                                "leadingMinutiae": [],
+                                "trailingMinutiae": [
+                                  {
+                                    "kind": "WHITESPACE_MINUTIAE",
+                                    "minutiae": " ",
+                                    "isInvalid": false
+                                  }
+                                ],
+                                "position": {
+                                  "startLine": 2,
+                                  "startColumn": 11,
+                                  "endLine": 2,
+                                  "endColumn": 20
+                                },
+                                "typeData": {
+                                  "typeSymbol": {
+                                    "kind": "TYPE",
+                                    "typeKind": "int",
+                                    "signature": "int"
+                                  },
+                                  "symbol": {
+                                    "moduleID": {
+                                      "orgName": "tharana_wanigaratne",
+                                      "packageName": "shariff_tester",
+                                      "moduleName": "shariff_tester",
+                                      "version": "0.1.0"
+                                    },
+                                    "kind": "PARAMETER",
+                                    "signature": "int a"
+                                  },
+                                  "diagnostics": []
+                                }
+                              },
+                              "operator": {
+                                "kind": "PlusToken",
+                                "isToken": true,
+                                "value": "+",
+                                "isMissing": false,
+                                "position": {
+                                  "startLine": 2,
+                                  "startColumn": 21,
+                                  "endLine": 2,
+                                  "endColumn": 22
+                                },
+                                "leadingMinutiae": [],
+                                "trailingMinutiae": [
+                                  {
+                                    "kind": "WHITESPACE_MINUTIAE",
+                                    "minutiae": " ",
+                                    "isInvalid": false
+                                  }
+                                ]
+                              },
+                              "rhsExpr": {
+                                "kind": "SimpleNameReference",
+                                "name": {
+                                  "kind": "IdentifierToken",
+                                  "isToken": true,
+                                  "value": "d",
+                                  "isMissing": false,
+                                  "position": {
+                                    "startLine": 2,
+                                    "startColumn": 23,
+                                    "endLine": 2,
+                                    "endColumn": 24
+                                  },
+                                  "leadingMinutiae": [],
+                                  "trailingMinutiae": [
+                                    {
+                                      "kind": "WHITESPACE_MINUTIAE",
+                                      "minutiae": " ",
+                                      "isInvalid": false
+                                    }
+                                  ]
+                                },
+                                "source": "d ",
+                                "syntaxDiagnostics": [],
+                                "leadingMinutiae": [],
+                                "trailingMinutiae": [
+                                  {
+                                    "kind": "WHITESPACE_MINUTIAE",
+                                    "minutiae": " ",
+                                    "isInvalid": false
+                                  }
+                                ],
+                                "position": {
+                                  "startLine": 2,
+                                  "startColumn": 23,
+                                  "endLine": 2,
+                                  "endColumn": 24
+                                },
+                                "typeData": {
+                                  "typeSymbol": {
+                                    "kind": "TYPE",
+                                    "typeKind": "int",
+                                    "signature": "int"
+                                  },
+                                  "symbol": {
+                                    "moduleID": {
+                                      "orgName": "tharana_wanigaratne",
+                                      "packageName": "shariff_tester",
+                                      "moduleName": "shariff_tester",
+                                      "version": "0.1.0"
+                                    },
+                                    "kind": "PARAMETER",
+                                    "signature": "int d"
+                                  },
+                                  "diagnostics": []
+                                }
+                              },
+                              "source": "a + b + c + d ",
+                              "syntaxDiagnostics": [],
+                              "leadingMinutiae": [],
+                              "trailingMinutiae": [
+                                {
+                                  "kind": "WHITESPACE_MINUTIAE",
+                                  "minutiae": " ",
+                                  "isInvalid": false
+                                }
+                              ],
+                              "position": {
+                                "startLine": 2,
+                                "startColumn": 11,
+                                "endLine": 2,
+                                "endColumn": 24
+                              },
+                              "typeData": {
+                                "typeSymbol": {
+                                  "kind": "TYPE",
+                                  "typeKind": "int",
+                                  "signature": "int"
+                                },
+                                "symbol": {
+                                  "moduleID": {
+                                    "orgName": "tharana_wanigaratne",
+                                    "packageName": "shariff_tester",
+                                    "moduleName": "shariff_tester",
+                                    "version": "0.1.0"
+                                  },
+                                  "kind": "PARAMETER",
+                                  "signature": "int a"
+                                },
+                                "diagnostics": []
+                              }
+                            },
+                            "operator": {
+                              "kind": "PlusToken",
+                              "isToken": true,
+                              "value": "+",
+                              "isMissing": false,
+                              "position": {
+                                "startLine": 2,
+                                "startColumn": 25,
+                                "endLine": 2,
+                                "endColumn": 26
+                              },
+                              "leadingMinutiae": [],
+                              "trailingMinutiae": [
+                                {
+                                  "kind": "WHITESPACE_MINUTIAE",
+                                  "minutiae": " ",
+                                  "isInvalid": false
+                                }
+                              ]
+                            },
+                            "rhsExpr": {
+                              "kind": "SimpleNameReference",
+                              "name": {
+                                "kind": "IdentifierToken",
+                                "isToken": true,
+                                "value": "e",
+                                "isMissing": false,
+                                "position": {
+                                  "startLine": 2,
+                                  "startColumn": 27,
+                                  "endLine": 2,
+                                  "endColumn": 28
+                                },
+                                "leadingMinutiae": [],
+                                "trailingMinutiae": [
+                                  {
+                                    "kind": "WHITESPACE_MINUTIAE",
+                                    "minutiae": " ",
+                                    "isInvalid": false
+                                  }
+                                ]
+                              },
+                              "source": "e ",
+                              "syntaxDiagnostics": [],
+                              "leadingMinutiae": [],
+                              "trailingMinutiae": [
+                                {
+                                  "kind": "WHITESPACE_MINUTIAE",
+                                  "minutiae": " ",
+                                  "isInvalid": false
+                                }
+                              ],
+                              "position": {
+                                "startLine": 2,
+                                "startColumn": 27,
+                                "endLine": 2,
+                                "endColumn": 28
+                              },
+                              "typeData": {
+                                "typeSymbol": {
+                                  "kind": "TYPE",
+                                  "typeKind": "int",
+                                  "signature": "int"
+                                },
+                                "symbol": {
+                                  "moduleID": {
+                                    "orgName": "tharana_wanigaratne",
+                                    "packageName": "shariff_tester",
+                                    "moduleName": "shariff_tester",
+                                    "version": "0.1.0"
+                                  },
+                                  "kind": "PARAMETER",
+                                  "signature": "int e"
+                                },
+                                "diagnostics": []
+                              }
+                            },
+                            "source": "a + b + c + d + e ",
+                            "syntaxDiagnostics": [],
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": " ",
+                                "isInvalid": false
+                              }
+                            ],
+                            "position": {
+                              "startLine": 2,
+                              "startColumn": 11,
+                              "endLine": 2,
+                              "endColumn": 28
+                            },
+                            "typeData": {
+                              "typeSymbol": {
+                                "kind": "TYPE",
+                                "typeKind": "int",
+                                "signature": "int"
+                              },
+                              "symbol": {
+                                "moduleID": {
+                                  "orgName": "tharana_wanigaratne",
+                                  "packageName": "shariff_tester",
+                                  "moduleName": "shariff_tester",
+                                  "version": "0.1.0"
+                                },
+                                "kind": "PARAMETER",
+                                "signature": "int a"
+                              },
+                              "diagnostics": []
+                            }
+                          },
+                          "operator": {
+                            "kind": "PlusToken",
+                            "isToken": true,
+                            "value": "+",
+                            "isMissing": false,
+                            "position": {
+                              "startLine": 2,
+                              "startColumn": 29,
+                              "endLine": 2,
+                              "endColumn": 30
+                            },
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": " ",
+                                "isInvalid": false
+                              }
+                            ]
+                          },
+                          "rhsExpr": {
+                            "kind": "SimpleNameReference",
+                            "name": {
+                              "kind": "IdentifierToken",
+                              "isToken": true,
+                              "value": "f",
+                              "isMissing": false,
+                              "position": {
+                                "startLine": 2,
+                                "startColumn": 31,
+                                "endLine": 2,
+                                "endColumn": 32
+                              },
+                              "leadingMinutiae": [],
+                              "trailingMinutiae": [
+                                {
+                                  "kind": "WHITESPACE_MINUTIAE",
+                                  "minutiae": " ",
+                                  "isInvalid": false
+                                }
+                              ]
+                            },
+                            "source": "f ",
+                            "syntaxDiagnostics": [],
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": " ",
+                                "isInvalid": false
+                              }
+                            ],
+                            "position": {
+                              "startLine": 2,
+                              "startColumn": 31,
+                              "endLine": 2,
+                              "endColumn": 32
+                            },
+                            "typeData": {
+                              "typeSymbol": {
+                                "kind": "TYPE",
+                                "typeKind": "int",
+                                "signature": "int"
+                              },
+                              "symbol": {
+                                "moduleID": {
+                                  "orgName": "tharana_wanigaratne",
+                                  "packageName": "shariff_tester",
+                                  "moduleName": "shariff_tester",
+                                  "version": "0.1.0"
+                                },
+                                "kind": "PARAMETER",
+                                "signature": "int f"
+                              },
+                              "diagnostics": []
+                            }
+                          },
+                          "source": "a + b + c + d + e + f ",
+                          "syntaxDiagnostics": [],
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": " ",
+                              "isInvalid": false
+                            }
+                          ],
+                          "position": {
+                            "startLine": 2,
+                            "startColumn": 11,
+                            "endLine": 2,
+                            "endColumn": 32
+                          },
+                          "typeData": {
+                            "typeSymbol": {
+                              "kind": "TYPE",
+                              "typeKind": "int",
+                              "signature": "int"
+                            },
+                            "symbol": {
+                              "moduleID": {
+                                "orgName": "tharana_wanigaratne",
+                                "packageName": "shariff_tester",
+                                "moduleName": "shariff_tester",
+                                "version": "0.1.0"
+                              },
+                              "kind": "PARAMETER",
+                              "signature": "int a"
+                            },
+                            "diagnostics": []
+                          }
+                        },
+                        "operator": {
+                          "kind": "PlusToken",
+                          "isToken": true,
+                          "value": "+",
+                          "isMissing": false,
+                          "position": {
+                            "startLine": 2,
+                            "startColumn": 33,
+                            "endLine": 2,
+                            "endColumn": 34
+                          },
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": " ",
+                              "isInvalid": false
+                            }
+                          ]
+                        },
+                        "rhsExpr": {
+                          "kind": "SimpleNameReference",
+                          "name": {
+                            "kind": "IdentifierToken",
+                            "isToken": true,
+                            "value": "g",
+                            "isMissing": false,
+                            "position": {
+                              "startLine": 2,
+                              "startColumn": 35,
+                              "endLine": 2,
+                              "endColumn": 36
+                            },
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": []
+                          },
+                          "source": "g",
+                          "syntaxDiagnostics": [],
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [],
+                          "position": {
+                            "startLine": 2,
+                            "startColumn": 35,
+                            "endLine": 2,
+                            "endColumn": 36
+                          },
+                          "typeData": {
+                            "typeSymbol": {
+                              "kind": "TYPE",
+                              "typeKind": "int",
+                              "signature": "int"
+                            },
+                            "symbol": {
+                              "moduleID": {
+                                "orgName": "tharana_wanigaratne",
+                                "packageName": "shariff_tester",
+                                "moduleName": "shariff_tester",
+                                "version": "0.1.0"
+                              },
+                              "kind": "PARAMETER",
+                              "signature": "int g"
+                            },
+                            "diagnostics": []
+                          }
+                        },
+                        "source": "a + b + c + d + e + f + g",
+                        "syntaxDiagnostics": [],
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [],
+                        "position": {
+                          "startLine": 2,
+                          "startColumn": 11,
+                          "endLine": 2,
+                          "endColumn": 36
+                        },
+                        "typeData": {
+                          "typeSymbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "symbol": {
+                            "moduleID": {
+                              "orgName": "tharana_wanigaratne",
+                              "packageName": "shariff_tester",
+                              "moduleName": "shariff_tester",
+                              "version": "0.1.0"
+                            },
+                            "kind": "PARAMETER",
+                            "signature": "int a"
+                          },
+                          "diagnostics": []
+                        }
+                      },
+                      "semicolonToken": {
+                        "kind": "SemicolonToken",
+                        "isToken": true,
+                        "value": ";",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 2,
+                          "startColumn": 36,
+                          "endLine": 2,
+                          "endColumn": 37
+                        },
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "END_OF_LINE_MINUTIAE",
+                            "minutiae": "\n",
+                            "isInvalid": false
+                          }
+                        ]
+                      },
+                      "source": "    return a + b + c + d + e + f + g;\n",
+                      "syntaxDiagnostics": [],
+                      "leadingMinutiae": [
+                        {
+                          "kind": "WHITESPACE_MINUTIAE",
+                          "minutiae": "    ",
+                          "isInvalid": false
+                        }
+                      ],
+                      "trailingMinutiae": [
+                        {
+                          "kind": "END_OF_LINE_MINUTIAE",
+                          "minutiae": "\n",
+                          "isInvalid": false
+                        }
+                      ],
+                      "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "endLine": 2,
+                        "endColumn": 37
+                      },
+                      "typeData": { "diagnostics": [] }
+                    }
+                  ],
+                  "closeBraceToken": {
+                    "kind": "CloseBraceToken",
+                    "isToken": true,
+                    "value": "}",
+                    "isMissing": false,
+                    "position": {
+                      "startLine": 3,
+                      "startColumn": 0,
+                      "endLine": 3,
+                      "endColumn": 1
+                    },
+                    "leadingMinutiae": [],
+                    "trailingMinutiae": [
+                      {
+                        "kind": "END_OF_LINE_MINUTIAE",
+                        "minutiae": "\n",
+                        "isInvalid": false
+                      }
+                    ]
+                  },
+                  "source": "{\n    return a + b + c + d + e + f + g;\n}\n",
+                  "syntaxDiagnostics": [],
+                  "leadingMinutiae": [],
+                  "trailingMinutiae": [
+                    {
+                      "kind": "END_OF_LINE_MINUTIAE",
+                      "minutiae": "\n",
+                      "isInvalid": false
+                    }
+                  ],
+                  "position": {
+                    "startLine": 1,
+                    "startColumn": 106,
+                    "endLine": 3,
+                    "endColumn": 1
+                  },
+                  "typeData": { "diagnostics": [] }
+                },
+                "source": "// Non-compliant as the function has too many parameters\npublic function tooManyParametersFunc(int a, int b, int c, int d, int e, int f, int g, int h) returns int {\n    return a + b + c + d + e + f + g;\n}\n",
+                "syntaxDiagnostics": [],
+                "leadingMinutiae": [
+                  {
+                    "kind": "COMMENT_MINUTIAE",
+                    "minutiae": "// Non-compliant as the function has too many parameters",
+                    "isInvalid": false
+                  },
+                  {
+                    "kind": "END_OF_LINE_MINUTIAE",
+                    "minutiae": "\n",
+                    "isInvalid": false
+                  }
+                ],
+                "trailingMinutiae": [
+                  {
+                    "kind": "END_OF_LINE_MINUTIAE",
+                    "minutiae": "\n",
+                    "isInvalid": false
+                  }
+                ],
+                "position": {
+                  "startLine": 1,
+                  "startColumn": 0,
+                  "endLine": 3,
+                  "endColumn": 1
+                },
+                "typeData": {
+                  "symbol": {
+                    "deprecated": false,
+                    "moduleID": {
+                      "orgName": "tharana_wanigaratne",
+                      "packageName": "shariff_tester",
+                      "moduleName": "shariff_tester",
+                      "version": "0.1.0"
+                    },
+                    "kind": "FUNCTION",
+                    "external": false
+                  },
+                  "diagnostics": []
+                }
+              },
+              {
+                "kind": "FunctionDefinition",
+                "qualifierList": [
+                  {
+                    "kind": "PublicKeyword",
+                    "isToken": true,
+                    "value": "public",
+                    "isMissing": false,
+                    "position": {
+                      "startLine": 5,
+                      "startColumn": 0,
+                      "endLine": 5,
+                      "endColumn": 6
+                    },
+                    "leadingMinutiae": [
+                      {
+                        "kind": "END_OF_LINE_MINUTIAE",
+                        "minutiae": "\n",
+                        "isInvalid": false
+                      }
+                    ],
+                    "trailingMinutiae": [
+                      {
+                        "kind": "WHITESPACE_MINUTIAE",
+                        "minutiae": " ",
+                        "isInvalid": false
+                      }
+                    ]
+                  }
+                ],
+                "functionKeyword": {
+                  "kind": "FunctionKeyword",
+                  "isToken": true,
+                  "value": "function",
+                  "isMissing": false,
+                  "position": {
+                    "startLine": 5,
+                    "startColumn": 7,
+                    "endLine": 5,
+                    "endColumn": 15
+                  },
+                  "leadingMinutiae": [],
+                  "trailingMinutiae": [
+                    {
+                      "kind": "WHITESPACE_MINUTIAE",
+                      "minutiae": " ",
+                      "isInvalid": false
+                    }
+                  ]
+                },
+                "functionName": {
+                  "kind": "IdentifierToken",
+                  "isToken": true,
+                  "value": "main",
+                  "isMissing": false,
+                  "position": {
+                    "startLine": 5,
+                    "startColumn": 16,
+                    "endLine": 5,
+                    "endColumn": 20
+                  },
+                  "leadingMinutiae": [],
+                  "trailingMinutiae": []
+                },
+                "relativeResourcePath": [],
+                "functionSignature": {
+                  "kind": "FunctionSignature",
+                  "openParenToken": {
+                    "kind": "OpenParenToken",
+                    "isToken": true,
+                    "value": "(",
+                    "isMissing": false,
+                    "position": {
+                      "startLine": 5,
+                      "startColumn": 20,
+                      "endLine": 5,
+                      "endColumn": 21
+                    },
+                    "leadingMinutiae": [],
+                    "trailingMinutiae": []
+                  },
+                  "parameters": [],
+                  "closeParenToken": {
+                    "kind": "CloseParenToken",
+                    "isToken": true,
+                    "value": ")",
+                    "isMissing": false,
+                    "position": {
+                      "startLine": 5,
+                      "startColumn": 21,
+                      "endLine": 5,
+                      "endColumn": 22
+                    },
+                    "leadingMinutiae": [],
+                    "trailingMinutiae": [
+                      {
+                        "kind": "WHITESPACE_MINUTIAE",
+                        "minutiae": " ",
+                        "isInvalid": false
+                      }
+                    ]
+                  },
+                  "source": "() ",
+                  "syntaxDiagnostics": [],
+                  "leadingMinutiae": [],
+                  "trailingMinutiae": [
+                    {
+                      "kind": "WHITESPACE_MINUTIAE",
+                      "minutiae": " ",
+                      "isInvalid": false
+                    }
+                  ],
+                  "position": {
+                    "startLine": 5,
+                    "startColumn": 20,
+                    "endLine": 5,
+                    "endColumn": 22
+                  },
+                  "typeData": { "diagnostics": [] }
+                },
+                "functionBody": {
+                  "kind": "FunctionBodyBlock",
+                  "openBraceToken": {
+                    "kind": "OpenBraceToken",
+                    "isToken": true,
+                    "value": "{",
+                    "isMissing": false,
+                    "position": {
+                      "startLine": 5,
+                      "startColumn": 23,
+                      "endLine": 5,
+                      "endColumn": 24
+                    },
+                    "leadingMinutiae": [],
+                    "trailingMinutiae": [
+                      {
+                        "kind": "END_OF_LINE_MINUTIAE",
+                        "minutiae": "\n",
+                        "isInvalid": false
+                      }
+                    ]
+                  },
+                  "statements": [
+                    {
+                      "kind": "LocalVarDecl",
+                      "annotations": [],
+                      "typedBindingPattern": {
+                        "kind": "TypedBindingPattern",
+                        "typeDescriptor": {
+                          "kind": "IntTypeDesc",
+                          "name": {
+                            "kind": "IntKeyword",
+                            "isToken": true,
+                            "value": "int",
+                            "isMissing": false,
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 4,
+                              "endLine": 6,
+                              "endColumn": 7
+                            },
+                            "leadingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": "    ",
+                                "isInvalid": false
+                              }
+                            ],
+                            "trailingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": " ",
+                                "isInvalid": false
+                              }
+                            ]
+                          },
+                          "source": "    int ",
+                          "syntaxDiagnostics": [],
+                          "leadingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": "    ",
+                              "isInvalid": false
+                            }
+                          ],
+                          "trailingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": " ",
+                              "isInvalid": false
+                            }
+                          ],
+                          "position": {
+                            "startLine": 6,
+                            "startColumn": 4,
+                            "endLine": 6,
+                            "endColumn": 7
+                          },
+                          "typeData": {
+                            "typeSymbol": {
+                              "kind": "TYPE",
+                              "typeKind": "int",
+                              "signature": "int"
+                            },
+                            "symbol": {
+                              "kind": "TYPE",
+                              "typeKind": "int",
+                              "signature": "int"
+                            },
+                            "diagnostics": []
+                          }
+                        },
+                        "bindingPattern": {
+                          "kind": "CaptureBindingPattern",
+                          "variableName": {
+                            "kind": "IdentifierToken",
+                            "isToken": true,
+                            "value": "x",
+                            "isMissing": false,
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 8,
+                              "endLine": 6,
+                              "endColumn": 9
+                            },
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": " ",
+                                "isInvalid": false
+                              }
+                            ]
+                          },
+                          "source": "x ",
+                          "syntaxDiagnostics": [],
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [
+                            {
+                              "kind": "WHITESPACE_MINUTIAE",
+                              "minutiae": " ",
+                              "isInvalid": false
+                            }
+                          ],
+                          "position": {
+                            "startLine": 6,
+                            "startColumn": 8,
+                            "endLine": 6,
+                            "endColumn": 9
+                          },
+                          "typeData": {
+                            "typeSymbol": {
+                              "kind": "TYPE",
+                              "typeKind": "int",
+                              "signature": "int"
+                            },
+                            "symbol": {
+                              "deprecated": false,
+                              "moduleID": {
+                                "orgName": "tharana_wanigaratne",
+                                "packageName": "shariff_tester",
+                                "moduleName": "shariff_tester",
+                                "version": "0.1.0"
+                              },
+                              "kind": "VARIABLE"
+                            },
+                            "diagnostics": []
+                          }
+                        },
+                        "source": "    int x ",
+                        "syntaxDiagnostics": [],
+                        "leadingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": "    ",
+                            "isInvalid": false
+                          }
+                        ],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": " ",
+                            "isInvalid": false
+                          }
+                        ],
+                        "position": {
+                          "startLine": 6,
+                          "startColumn": 4,
+                          "endLine": 6,
+                          "endColumn": 9
+                        },
+                        "typeData": {
+                          "symbol": {
+                            "deprecated": false,
+                            "moduleID": {
+                              "orgName": "tharana_wanigaratne",
+                              "packageName": "shariff_tester",
+                              "moduleName": "shariff_tester",
+                              "version": "0.1.0"
+                            },
+                            "kind": "VARIABLE"
+                          },
+                          "diagnostics": []
+                        }
+                      },
+                      "equalsToken": {
+                        "kind": "EqualToken",
+                        "isToken": true,
+                        "value": "=",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 6,
+                          "startColumn": 10,
+                          "endLine": 6,
+                          "endColumn": 11
+                        },
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "WHITESPACE_MINUTIAE",
+                            "minutiae": " ",
+                            "isInvalid": false
+                          }
+                        ]
+                      },
+                      "initializer": {
+                        "kind": "FunctionCall",
+                        "functionName": {
+                          "kind": "SimpleNameReference",
+                          "name": {
+                            "kind": "IdentifierToken",
+                            "isToken": true,
+                            "value": "tooManyParametersFunc",
+                            "isMissing": false,
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 12,
+                              "endLine": 6,
+                              "endColumn": 33
+                            },
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": []
+                          },
+                          "source": "tooManyParametersFunc",
+                          "syntaxDiagnostics": [],
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": [],
+                          "position": {
+                            "startLine": 6,
+                            "startColumn": 12,
+                            "endLine": 6,
+                            "endColumn": 33
+                          },
+                          "typeData": {
+                            "typeSymbol": {
+                              "kind": "TYPE",
+                              "typeKind": "int",
+                              "signature": "int"
+                            },
+                            "symbol": {
+                              "deprecated": false,
+                              "moduleID": {
+                                "orgName": "tharana_wanigaratne",
+                                "packageName": "shariff_tester",
+                                "moduleName": "shariff_tester",
+                                "version": "0.1.0"
+                              },
+                              "kind": "FUNCTION",
+                              "external": false
+                            },
+                            "diagnostics": []
+                          }
+                        },
+                        "openParenToken": {
+                          "kind": "OpenParenToken",
+                          "isToken": true,
+                          "value": "(",
+                          "isMissing": false,
+                          "position": {
+                            "startLine": 6,
+                            "startColumn": 33,
+                            "endLine": 6,
+                            "endColumn": 34
+                          },
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": []
+                        },
+                        "arguments": [
+                          {
+                            "kind": "PositionalArg",
+                            "expression": {
+                              "kind": "NumericLiteral",
+                              "literalToken": {
+                                "kind": "DecimalIntegerLiteralToken",
+                                "isToken": true,
+                                "value": "1",
+                                "isMissing": false,
+                                "position": {
+                                  "startLine": 6,
+                                  "startColumn": 34,
+                                  "endLine": 6,
+                                  "endColumn": 35
+                                },
+                                "leadingMinutiae": [],
+                                "trailingMinutiae": []
+                              },
+                              "source": "1",
+                              "syntaxDiagnostics": [],
+                              "leadingMinutiae": [],
+                              "trailingMinutiae": [],
+                              "position": {
+                                "startLine": 6,
+                                "startColumn": 34,
+                                "endLine": 6,
+                                "endColumn": 35
+                              },
+                              "typeData": {
+                                "typeSymbol": {
+                                  "kind": "TYPE",
+                                  "typeKind": "int",
+                                  "signature": "int"
+                                },
+                                "diagnostics": []
+                              }
+                            },
+                            "source": "1",
+                            "syntaxDiagnostics": [],
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [],
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 34,
+                              "endLine": 6,
+                              "endColumn": 35
+                            },
+                            "typeData": {
+                              "typeSymbol": {
+                                "kind": "TYPE",
+                                "typeKind": "int",
+                                "signature": "int"
+                              },
+                              "diagnostics": []
+                            }
+                          },
+                          {
+                            "kind": "CommaToken",
+                            "isToken": true,
+                            "value": ",",
+                            "isMissing": false,
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 35,
+                              "endLine": 6,
+                              "endColumn": 36
+                            },
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": " ",
+                                "isInvalid": false
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "PositionalArg",
+                            "expression": {
+                              "kind": "NumericLiteral",
+                              "literalToken": {
+                                "kind": "DecimalIntegerLiteralToken",
+                                "isToken": true,
+                                "value": "2",
+                                "isMissing": false,
+                                "position": {
+                                  "startLine": 6,
+                                  "startColumn": 37,
+                                  "endLine": 6,
+                                  "endColumn": 38
+                                },
+                                "leadingMinutiae": [],
+                                "trailingMinutiae": []
+                              },
+                              "source": "2",
+                              "syntaxDiagnostics": [],
+                              "leadingMinutiae": [],
+                              "trailingMinutiae": [],
+                              "position": {
+                                "startLine": 6,
+                                "startColumn": 37,
+                                "endLine": 6,
+                                "endColumn": 38
+                              },
+                              "typeData": {
+                                "typeSymbol": {
+                                  "kind": "TYPE",
+                                  "typeKind": "int",
+                                  "signature": "int"
+                                },
+                                "diagnostics": []
+                              }
+                            },
+                            "source": "2",
+                            "syntaxDiagnostics": [],
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [],
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 37,
+                              "endLine": 6,
+                              "endColumn": 38
+                            },
+                            "typeData": {
+                              "typeSymbol": {
+                                "kind": "TYPE",
+                                "typeKind": "int",
+                                "signature": "int"
+                              },
+                              "diagnostics": []
+                            }
+                          },
+                          {
+                            "kind": "CommaToken",
+                            "isToken": true,
+                            "value": ",",
+                            "isMissing": false,
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 38,
+                              "endLine": 6,
+                              "endColumn": 39
+                            },
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": " ",
+                                "isInvalid": false
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "PositionalArg",
+                            "expression": {
+                              "kind": "NumericLiteral",
+                              "literalToken": {
+                                "kind": "DecimalIntegerLiteralToken",
+                                "isToken": true,
+                                "value": "3",
+                                "isMissing": false,
+                                "position": {
+                                  "startLine": 6,
+                                  "startColumn": 40,
+                                  "endLine": 6,
+                                  "endColumn": 41
+                                },
+                                "leadingMinutiae": [],
+                                "trailingMinutiae": []
+                              },
+                              "source": "3",
+                              "syntaxDiagnostics": [],
+                              "leadingMinutiae": [],
+                              "trailingMinutiae": [],
+                              "position": {
+                                "startLine": 6,
+                                "startColumn": 40,
+                                "endLine": 6,
+                                "endColumn": 41
+                              },
+                              "typeData": {
+                                "typeSymbol": {
+                                  "kind": "TYPE",
+                                  "typeKind": "int",
+                                  "signature": "int"
+                                },
+                                "diagnostics": []
+                              }
+                            },
+                            "source": "3",
+                            "syntaxDiagnostics": [],
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [],
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 40,
+                              "endLine": 6,
+                              "endColumn": 41
+                            },
+                            "typeData": {
+                              "typeSymbol": {
+                                "kind": "TYPE",
+                                "typeKind": "int",
+                                "signature": "int"
+                              },
+                              "diagnostics": []
+                            }
+                          },
+                          {
+                            "kind": "CommaToken",
+                            "isToken": true,
+                            "value": ",",
+                            "isMissing": false,
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 41,
+                              "endLine": 6,
+                              "endColumn": 42
+                            },
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": " ",
+                                "isInvalid": false
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "PositionalArg",
+                            "expression": {
+                              "kind": "NumericLiteral",
+                              "literalToken": {
+                                "kind": "DecimalIntegerLiteralToken",
+                                "isToken": true,
+                                "value": "4",
+                                "isMissing": false,
+                                "position": {
+                                  "startLine": 6,
+                                  "startColumn": 43,
+                                  "endLine": 6,
+                                  "endColumn": 44
+                                },
+                                "leadingMinutiae": [],
+                                "trailingMinutiae": []
+                              },
+                              "source": "4",
+                              "syntaxDiagnostics": [],
+                              "leadingMinutiae": [],
+                              "trailingMinutiae": [],
+                              "position": {
+                                "startLine": 6,
+                                "startColumn": 43,
+                                "endLine": 6,
+                                "endColumn": 44
+                              },
+                              "typeData": {
+                                "typeSymbol": {
+                                  "kind": "TYPE",
+                                  "typeKind": "int",
+                                  "signature": "int"
+                                },
+                                "diagnostics": []
+                              }
+                            },
+                            "source": "4",
+                            "syntaxDiagnostics": [],
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [],
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 43,
+                              "endLine": 6,
+                              "endColumn": 44
+                            },
+                            "typeData": {
+                              "typeSymbol": {
+                                "kind": "TYPE",
+                                "typeKind": "int",
+                                "signature": "int"
+                              },
+                              "diagnostics": []
+                            }
+                          },
+                          {
+                            "kind": "CommaToken",
+                            "isToken": true,
+                            "value": ",",
+                            "isMissing": false,
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 44,
+                              "endLine": 6,
+                              "endColumn": 45
+                            },
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": " ",
+                                "isInvalid": false
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "PositionalArg",
+                            "expression": {
+                              "kind": "NumericLiteral",
+                              "literalToken": {
+                                "kind": "DecimalIntegerLiteralToken",
+                                "isToken": true,
+                                "value": "5",
+                                "isMissing": false,
+                                "position": {
+                                  "startLine": 6,
+                                  "startColumn": 46,
+                                  "endLine": 6,
+                                  "endColumn": 47
+                                },
+                                "leadingMinutiae": [],
+                                "trailingMinutiae": []
+                              },
+                              "source": "5",
+                              "syntaxDiagnostics": [],
+                              "leadingMinutiae": [],
+                              "trailingMinutiae": [],
+                              "position": {
+                                "startLine": 6,
+                                "startColumn": 46,
+                                "endLine": 6,
+                                "endColumn": 47
+                              },
+                              "typeData": {
+                                "typeSymbol": {
+                                  "kind": "TYPE",
+                                  "typeKind": "int",
+                                  "signature": "int"
+                                },
+                                "diagnostics": []
+                              }
+                            },
+                            "source": "5",
+                            "syntaxDiagnostics": [],
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [],
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 46,
+                              "endLine": 6,
+                              "endColumn": 47
+                            },
+                            "typeData": {
+                              "typeSymbol": {
+                                "kind": "TYPE",
+                                "typeKind": "int",
+                                "signature": "int"
+                              },
+                              "diagnostics": []
+                            }
+                          },
+                          {
+                            "kind": "CommaToken",
+                            "isToken": true,
+                            "value": ",",
+                            "isMissing": false,
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 47,
+                              "endLine": 6,
+                              "endColumn": 48
+                            },
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": " ",
+                                "isInvalid": false
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "PositionalArg",
+                            "expression": {
+                              "kind": "NumericLiteral",
+                              "literalToken": {
+                                "kind": "DecimalIntegerLiteralToken",
+                                "isToken": true,
+                                "value": "6",
+                                "isMissing": false,
+                                "position": {
+                                  "startLine": 6,
+                                  "startColumn": 49,
+                                  "endLine": 6,
+                                  "endColumn": 50
+                                },
+                                "leadingMinutiae": [],
+                                "trailingMinutiae": []
+                              },
+                              "source": "6",
+                              "syntaxDiagnostics": [],
+                              "leadingMinutiae": [],
+                              "trailingMinutiae": [],
+                              "position": {
+                                "startLine": 6,
+                                "startColumn": 49,
+                                "endLine": 6,
+                                "endColumn": 50
+                              },
+                              "typeData": {
+                                "typeSymbol": {
+                                  "kind": "TYPE",
+                                  "typeKind": "int",
+                                  "signature": "int"
+                                },
+                                "diagnostics": []
+                              }
+                            },
+                            "source": "6",
+                            "syntaxDiagnostics": [],
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [],
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 49,
+                              "endLine": 6,
+                              "endColumn": 50
+                            },
+                            "typeData": {
+                              "typeSymbol": {
+                                "kind": "TYPE",
+                                "typeKind": "int",
+                                "signature": "int"
+                              },
+                              "diagnostics": []
+                            }
+                          },
+                          {
+                            "kind": "CommaToken",
+                            "isToken": true,
+                            "value": ",",
+                            "isMissing": false,
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 50,
+                              "endLine": 6,
+                              "endColumn": 51
+                            },
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": " ",
+                                "isInvalid": false
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "PositionalArg",
+                            "expression": {
+                              "kind": "NumericLiteral",
+                              "literalToken": {
+                                "kind": "DecimalIntegerLiteralToken",
+                                "isToken": true,
+                                "value": "7",
+                                "isMissing": false,
+                                "position": {
+                                  "startLine": 6,
+                                  "startColumn": 52,
+                                  "endLine": 6,
+                                  "endColumn": 53
+                                },
+                                "leadingMinutiae": [],
+                                "trailingMinutiae": []
+                              },
+                              "source": "7",
+                              "syntaxDiagnostics": [],
+                              "leadingMinutiae": [],
+                              "trailingMinutiae": [],
+                              "position": {
+                                "startLine": 6,
+                                "startColumn": 52,
+                                "endLine": 6,
+                                "endColumn": 53
+                              },
+                              "typeData": {
+                                "typeSymbol": {
+                                  "kind": "TYPE",
+                                  "typeKind": "int",
+                                  "signature": "int"
+                                },
+                                "diagnostics": []
+                              }
+                            },
+                            "source": "7",
+                            "syntaxDiagnostics": [],
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [],
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 52,
+                              "endLine": 6,
+                              "endColumn": 53
+                            },
+                            "typeData": {
+                              "typeSymbol": {
+                                "kind": "TYPE",
+                                "typeKind": "int",
+                                "signature": "int"
+                              },
+                              "diagnostics": []
+                            }
+                          },
+                          {
+                            "kind": "CommaToken",
+                            "isToken": true,
+                            "value": ",",
+                            "isMissing": false,
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 53,
+                              "endLine": 6,
+                              "endColumn": 54
+                            },
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [
+                              {
+                                "kind": "WHITESPACE_MINUTIAE",
+                                "minutiae": " ",
+                                "isInvalid": false
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "PositionalArg",
+                            "expression": {
+                              "kind": "NumericLiteral",
+                              "literalToken": {
+                                "kind": "DecimalIntegerLiteralToken",
+                                "isToken": true,
+                                "value": "8",
+                                "isMissing": false,
+                                "position": {
+                                  "startLine": 6,
+                                  "startColumn": 55,
+                                  "endLine": 6,
+                                  "endColumn": 56
+                                },
+                                "leadingMinutiae": [],
+                                "trailingMinutiae": []
+                              },
+                              "source": "8",
+                              "syntaxDiagnostics": [],
+                              "leadingMinutiae": [],
+                              "trailingMinutiae": [],
+                              "position": {
+                                "startLine": 6,
+                                "startColumn": 55,
+                                "endLine": 6,
+                                "endColumn": 56
+                              },
+                              "typeData": {
+                                "typeSymbol": {
+                                  "kind": "TYPE",
+                                  "typeKind": "int",
+                                  "signature": "int"
+                                },
+                                "diagnostics": []
+                              }
+                            },
+                            "source": "8",
+                            "syntaxDiagnostics": [],
+                            "leadingMinutiae": [],
+                            "trailingMinutiae": [],
+                            "position": {
+                              "startLine": 6,
+                              "startColumn": 55,
+                              "endLine": 6,
+                              "endColumn": 56
+                            },
+                            "typeData": {
+                              "typeSymbol": {
+                                "kind": "TYPE",
+                                "typeKind": "int",
+                                "signature": "int"
+                              },
+                              "diagnostics": []
+                            }
+                          }
+                        ],
+                        "closeParenToken": {
+                          "kind": "CloseParenToken",
+                          "isToken": true,
+                          "value": ")",
+                          "isMissing": false,
+                          "position": {
+                            "startLine": 6,
+                            "startColumn": 56,
+                            "endLine": 6,
+                            "endColumn": 57
+                          },
+                          "leadingMinutiae": [],
+                          "trailingMinutiae": []
+                        },
+                        "source": "tooManyParametersFunc(1, 2, 3, 4, 5, 6, 7, 8)",
+                        "syntaxDiagnostics": [],
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [],
+                        "position": {
+                          "startLine": 6,
+                          "startColumn": 12,
+                          "endLine": 6,
+                          "endColumn": 57
+                        },
+                        "typeData": {
+                          "typeSymbol": {
+                            "kind": "TYPE",
+                            "typeKind": "int",
+                            "signature": "int"
+                          },
+                          "symbol": {
+                            "deprecated": false,
+                            "moduleID": {
+                              "orgName": "tharana_wanigaratne",
+                              "packageName": "shariff_tester",
+                              "moduleName": "shariff_tester",
+                              "version": "0.1.0"
+                            },
+                            "kind": "FUNCTION",
+                            "external": false
+                          },
+                          "diagnostics": []
+                        }
+                      },
+                      "semicolonToken": {
+                        "kind": "SemicolonToken",
+                        "isToken": true,
+                        "value": ";",
+                        "isMissing": false,
+                        "position": {
+                          "startLine": 6,
+                          "startColumn": 57,
+                          "endLine": 6,
+                          "endColumn": 58
+                        },
+                        "leadingMinutiae": [],
+                        "trailingMinutiae": [
+                          {
+                            "kind": "END_OF_LINE_MINUTIAE",
+                            "minutiae": "\n",
+                            "isInvalid": false
+                          }
+                        ]
+                      },
+                      "source": "    int x = tooManyParametersFunc(1, 2, 3, 4, 5, 6, 7, 8);\n",
+                      "syntaxDiagnostics": [],
+                      "leadingMinutiae": [
+                        {
+                          "kind": "WHITESPACE_MINUTIAE",
+                          "minutiae": "    ",
+                          "isInvalid": false
+                        }
+                      ],
+                      "trailingMinutiae": [
+                        {
+                          "kind": "END_OF_LINE_MINUTIAE",
+                          "minutiae": "\n",
+                          "isInvalid": false
+                        }
+                      ],
+                      "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "endLine": 6,
+                        "endColumn": 58
+                      },
+                      "typeData": {
+                        "typeSymbol": {
+                          "kind": "TYPE",
+                          "typeKind": "int",
+                          "signature": "int"
+                        },
+                        "symbol": {
+                          "deprecated": false,
+                          "moduleID": {
+                            "orgName": "tharana_wanigaratne",
+                            "packageName": "shariff_tester",
+                            "moduleName": "shariff_tester",
+                            "version": "0.1.0"
+                          },
+                          "kind": "VARIABLE"
+                        },
+                        "diagnostics": [
+                          {
+                            "message": "unused variable 'x'",
+                            "diagnosticInfo": {
+                              "code": "BCE20403",
+                              "severity": "WARNING"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ],
+                  "closeBraceToken": {
+                    "kind": "CloseBraceToken",
+                    "isToken": true,
+                    "value": "}",
+                    "isMissing": false,
+                    "position": {
+                      "startLine": 7,
+                      "startColumn": 0,
+                      "endLine": 7,
+                      "endColumn": 1
+                    },
+                    "leadingMinutiae": [],
+                    "trailingMinutiae": [
+                      {
+                        "kind": "END_OF_LINE_MINUTIAE",
+                        "minutiae": "\n",
+                        "isInvalid": false
+                      }
+                    ]
+                  },
+                  "source": "{\n    int x = tooManyParametersFunc(1, 2, 3, 4, 5, 6, 7, 8);\n}\n",
+                  "syntaxDiagnostics": [],
+                  "leadingMinutiae": [],
+                  "trailingMinutiae": [
+                    {
+                      "kind": "END_OF_LINE_MINUTIAE",
+                      "minutiae": "\n",
+                      "isInvalid": false
+                    }
+                  ],
+                  "position": {
+                    "startLine": 5,
+                    "startColumn": 23,
+                    "endLine": 7,
+                    "endColumn": 1
+                  },
+                  "typeData": {
+                    "diagnostics": [
+                      {
+                        "message": "unused variable 'x'",
+                        "diagnosticInfo": {
+                          "code": "BCE20403",
+                          "severity": "WARNING"
+                        }
+                      }
+                    ]
+                  }
+                },
+                "source": "\npublic function main() {\n    int x = tooManyParametersFunc(1, 2, 3, 4, 5, 6, 7, 8);\n}\n",
+                "syntaxDiagnostics": [],
+                "leadingMinutiae": [
+                  {
+                    "kind": "END_OF_LINE_MINUTIAE",
+                    "minutiae": "\n",
+                    "isInvalid": false
+                  }
+                ],
+                "trailingMinutiae": [
+                  {
+                    "kind": "END_OF_LINE_MINUTIAE",
+                    "minutiae": "\n",
+                    "isInvalid": false
+                  }
+                ],
+                "position": {
+                  "startLine": 5,
+                  "startColumn": 0,
+                  "endLine": 7,
+                  "endColumn": 1
+                },
+                "typeData": {
+                  "symbol": {
+                    "deprecated": false,
+                    "moduleID": {
+                      "orgName": "tharana_wanigaratne",
+                      "packageName": "shariff_tester",
+                      "moduleName": "shariff_tester",
+                      "version": "0.1.0"
+                    },
+                    "kind": "FUNCTION",
+                    "external": false
+                  },
+                  "diagnostics": [
+                    {
+                      "message": "unused variable 'x'",
+                      "diagnosticInfo": {
+                        "code": "BCE20403",
+                        "severity": "WARNING"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "eofToken": {
+              "kind": "EofToken",
+              "isToken": true,
+              "value": "",
+              "isMissing": false,
+              "position": {
+                "startLine": 8,
+                "startColumn": 0,
+                "endLine": 8,
+                "endColumn": 0
+              },
+              "leadingMinutiae": [],
+              "trailingMinutiae": []
+            },
+            "source": "// Non-compliant as the function has too many parameters\npublic function tooManyParametersFunc(int a, int b, int c, int d, int e, int f, int g, int h) returns int {\n    return a + b + c + d + e + f + g;\n}\n\npublic function main() {\n    int x = tooManyParametersFunc(1, 2, 3, 4, 5, 6, 7, 8);\n}\n",
+            "kind": "ModulePart",
+            "syntaxDiagnostics": [],
+            "leadingMinutiae": [
+              {
+                "kind": "COMMENT_MINUTIAE",
+                "minutiae": "// Non-compliant as the function has too many parameters",
+                "isInvalid": false
+              },
+              {
+                "kind": "END_OF_LINE_MINUTIAE",
+                "minutiae": "\n",
+                "isInvalid": false
+              }
+            ],
+            "trailingMinutiae": [],
+            "position": {
+              "startLine": 1,
+              "startColumn": 0,
+              "endLine": 7,
+              "endColumn": 1
+            },
+            "typeData": {
+              "diagnostics": [
+                {
+                  "message": "unused variable 'x'",
+                  "diagnosticInfo": {
+                    "code": "BCE20403",
+                    "severity": "WARNING"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

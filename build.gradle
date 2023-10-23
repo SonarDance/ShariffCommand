@@ -43,32 +43,22 @@ dependencies {
     implementation group:'org.ballerinalang', name:'ballerina-cli', version:'2201.7.2'
     // Required Module to convert the AST to a JSON File
     implementation group:'org.ballerinalang', name:'diagram-util', version:'2201.7.2'
+
 }
 
-// Required property to set for the project to set the Ballerina home when the project starts running
-//configurations {balTools}
+// Setting up the ballerina home property for the project
+tasks.withType(JavaExec).configureEach {
+    // From the local ballerina distribution
+    // Following code is the same as:
+    // systemProperty 'ballerina.home', System.getProperty('C:/Program Files/Ballerina/distributions/ballerina-2201.7.2')
+     systemProperty 'ballerina.home', System.getenv("BALLERINA_HOME")
+    // This is ok as we are assuming that the user already has the ballerina distribution with him when using the static
+    // code analysis with the sonarqube plugin
 
-//balTools ("org.ballerinalang:jballerina-tools:2201.7.2") {
-//    transitive = false
-//}
+    // From the gradle packages (The following solution is useful if we want to make the plugin standalone)
+    // systemProperty 'ballerina.home', System.getenv(bDistribution)
+}
 
-// $project is a built in gradle property that contains information regarding the current project
-//def bDistribution = file("$project.buildDir/extracted-distribution/jballerina-tools-2201.7.2")
-////gradle.properties["ballerina.home"] = bDistribution
-//
-//systemProp "ballerina.home","$bDistribution"
-//
-//task jBallerinaPack {
-//    doLast {
-//        configurations.balTools.resolvedConfiguration.resolvedArtifacts.each { artifact ->
-//            copy {
-//                from project.zipTree(artifact.getFile())
-//                into new File(project.buildDir, "extracted-distribution/")
-//            }
-//        }
-//    }
-//    outputs.dir bDistribution
-//}
 
 // class to build when gradlew run is executed in there terminal
 application {
