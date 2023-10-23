@@ -9,6 +9,8 @@ import io.ballerina.compiler.syntax.tree.SyntaxKind;
 import io.ballerina.projects.DiagnosticResult;
 import io.ballerina.projects.Module;
 import io.ballerina.projects.ProjectKind;
+import io.ballerina.projects.environment.EnvironmentBuilder;
+import io.ballerina.projects.internal.environment.BallerinaDistribution;
 import shariff.cli.SyntaxTreeScanner;
 
 // Imports relevant to getting the Ballerina Semantic Model
@@ -45,6 +47,8 @@ public class Main {
         Path filePath = Path.of(sourceFile.getPath());
 
         // Load the ballerina file
+        // NOTE: There is currently a problem in loading the Ballerina Home variable value required to perform Package
+        // API operations
         Project project = ProjectLoader.loadProject(filePath);
         // ==========================================
         // Additional operations that can be performed

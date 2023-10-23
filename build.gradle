@@ -24,8 +24,6 @@ repositories {
 }
 
 dependencies {
-    // Required dependencies for building a ballerina cli application
-    implementation group:'org.ballerinalang', name:'ballerina-cli', version:'2201.5.2-20230825-182600-2be0f24b'
     implementation group:'info.picocli', name:'picocli', version:'4.7.5'
 
     // Required dependency for transforming JSON file to Java Objects
@@ -37,12 +35,40 @@ dependencies {
     // Required dependencies for accessing the ballerina java project API
     // The version should match the version you have in the local machine
     implementation group:'org.ballerinalang', name:'ballerina-lang', version:'2201.7.2'
-    implementation group:'org.ballerinalang', name:'ballerina-tools-api', version:'2201.7.2'
     implementation group:'org.ballerinalang', name:'ballerina-parser', version:'2201.7.2'
-
+    implementation group:'org.ballerinalang', name:'ballerina-runtime', version:'2201.7.2'
+    implementation group:'org.ballerinalang', name:'ballerina-tools-api', version:'2201.7.2'
+    implementation group:'org.ballerinalang', name:'jballerina-tools', version:'2201.7.2'
+    // Required dependencies for building a ballerina cli application
+    implementation group:'org.ballerinalang', name:'ballerina-cli', version:'2201.7.2'
     // Required Module to convert the AST to a JSON File
     implementation group:'org.ballerinalang', name:'diagram-util', version:'2201.7.2'
 }
+
+// Required property to set for the project to set the Ballerina home when the project starts running
+//configurations {balTools}
+
+//balTools ("org.ballerinalang:jballerina-tools:2201.7.2") {
+//    transitive = false
+//}
+
+// $project is a built in gradle property that contains information regarding the current project
+//def bDistribution = file("$project.buildDir/extracted-distribution/jballerina-tools-2201.7.2")
+////gradle.properties["ballerina.home"] = bDistribution
+//
+//systemProp "ballerina.home","$bDistribution"
+//
+//task jBallerinaPack {
+//    doLast {
+//        configurations.balTools.resolvedConfiguration.resolvedArtifacts.each { artifact ->
+//            copy {
+//                from project.zipTree(artifact.getFile())
+//                into new File(project.buildDir, "extracted-distribution/")
+//            }
+//        }
+//    }
+//    outputs.dir bDistribution
+//}
 
 // class to build when gradlew run is executed in there terminal
 application {
