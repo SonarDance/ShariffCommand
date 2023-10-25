@@ -3,15 +3,18 @@ package balToolTester;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.ballerina.compiler.api.impl.BallerinaSemanticModel;
+import io.ballerina.compiler.api.symbols.Symbol;
 import io.ballerina.compiler.internal.parser.BallerinaParser;
 import io.ballerina.compiler.internal.parser.ParserFactory;
 import io.ballerina.compiler.internal.parser.tree.STNode;
 import io.ballerina.compiler.syntax.tree.SyntaxKind;
 import io.ballerina.projects.DiagnosticResult;
+import io.ballerina.projects.Document;
 import io.ballerina.projects.Module;
 import io.ballerina.projects.ProjectKind;
 import io.ballerina.projects.environment.EnvironmentBuilder;
 import io.ballerina.projects.internal.environment.BallerinaDistribution;
+import io.ballerina.tools.diagnostics.Location;
 import io.ballerina.tools.text.LineRange;
 import org.wso2.ballerinalang.compiler.tree.BLangFunction;
 import org.wso2.ballerinalang.compiler.tree.BLangPackage;
@@ -32,6 +35,7 @@ import java.nio.file.Path;
 import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 public class Main {
     public static void main(String[] args)  throws IOException {
@@ -73,17 +77,33 @@ public class Main {
 
         // Compile the Ballerina source code file
         PackageCompilation compilation = project.currentPackage().getCompilation();
+        System.out.println("Rules start from here!");
 
+        // ==================================
+        // Semantic Model based rule creation
+        // ==================================
+        // Get access to the semantic model
+        SemanticModel semanticModel = compilation.getSemanticModel(documentId.moduleId());
+        // List<Symbol> symbols = semanticModel.visibleSymbols();
+
+        // Retrieve all symbols from the semantic model
+        List<Symbol> symbols = semanticModel.moduleSymbols();
+
+        // Iterate through all symbols
+        for(Symbol symbol : symbols){
+            // Get the location where the symbol was found
+            System.out.println(symbol.getName());
+            System.out.println(symbol.getLocation().get().textRange());
+            System.out.println(symbol.getLocation().get().lineRange());
+        }
+
+        // =====================================
+        // BLangPackage Node based rule creation
+        // =====================================
         // Retrieve the BLangPackage Node
         BLangPackage bLangPackage = compilation.defaultModuleBLangPackage();
-        System.out.println("Rules start from here");
 
-        // To retrieve the semantic model
-        // SemanticModel semanticModel = compilation.getSemanticModel(documentId.moduleId());
-
-        // ========================
-        // Creating One simple Rule
-        // ========================
+        // Creating One simple Rule:
         // This rule should be able to determine all functions who's parameters are greater than 7
         // and report them with the accurate location information
 
@@ -109,11 +129,6 @@ public class Main {
                 }
             });
         }
-
-
-
-        // Retrieve the semantic model of the compiled source code
-        // SemanticModel semanticModel = compilation.getSemanticModel(documentId.moduleId());
     }
 
     public static void showTokens() throws IOException{
